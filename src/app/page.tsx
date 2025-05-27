@@ -7,608 +7,571 @@ export default function Home() {
   const pathname = usePathname()
   return (
     <div className={'main-content'}>
-      <header className={'main-header'}>
-        <div className={'top-header py-2'}>
-          <div className={'container'}>
-            <div className={'row align-items-center'}>
-              <div className={'col-4'}>
-                <div className={'ct d-inline-flex gap-3 bg-white'}>
-                  <div className={'icn'}>
-                    <svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M31.8823 18.1935C31.8823 10.4624 25.5717 4.17647 17.7647 4.17647C9.9576 4.17647 3.64701 10.4624 3.64701 18.1935C3.64701 20.2935 3.90642 21.6435 4.22583 22.6335C4.44113 23.29 4.95466 22.6424 5.20878 22.4041C6.04255 21.6222 7.14722 21.1945 8.29012 21.211C9.43302 21.2274 10.5249 21.6868 11.3358 22.4924C13.8435 24.9841 16.157 28.4394 12.9611 31.6159C11.2458 33.3206 8.66231 34.03 6.69642 32.1947C4.15878 29.8229 1.95466 27.0629 0.869364 23.7241C0.4176 22.3229 0.117599 20.5953 0.117599 18.1918C0.117599 8.49118 8.02878 0.64706 17.7647 0.64706C27.5005 0.64706 35.4117 8.49118 35.4117 18.1935C35.4117 20.5971 35.1135 22.3247 34.66 23.7224C33.5747 27.0629 31.3705 29.8229 28.8329 32.1929C26.867 34.03 24.2835 33.3224 22.5682 31.6159C19.3741 28.4394 21.6858 24.9841 24.1917 22.4924C25.0027 21.6863 26.095 21.2266 27.2383 21.2101C28.3816 21.1936 29.4867 21.6217 30.3205 22.4041C30.8094 22.8629 31.0511 23.41 31.3035 22.6335C31.6229 21.6453 31.8823 20.2918 31.8823 18.1935Z" fill="#DF002F" />
-                    </svg>
-                  </div>
-                  <div className={'ct-dtl'}>
-                    <p>For support</p>
-                    <h6>817-393-3335</h6>
-                  </div>
-                </div>
-              </div>
-              <div className={'col-4 '}>
-                <div className={'logo text-center'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/logo.png"
-                    alt="logo" />
-                </div>
-              </div>
-
-              <div className={'col-4'}>
-                <div className={'social d-flex gap-2 justify-content-end'}>
-                  <a href={'#'}>
-                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M31.4849 3.91177H13.1026C8.02641 3.91177 3.91138 8.0268 3.91138 13.1029V31.4853C3.91138 36.5614 8.02641 40.6765 13.1026 40.6765H31.4849C36.5611 40.6765 40.6761 36.5614 40.6761 31.4853V13.1029C40.6761 8.0268 36.5611 3.91177 31.4849 3.91177Z" stroke="#1B1A1A" strokeWidth="2.11765" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M29.6467 21.136C29.8736 22.6659 29.6123 24.2283 28.9 25.6011C28.1877 26.9739 27.0606 28.0871 25.6791 28.7825C24.2977 29.4778 22.7321 29.7198 21.2052 29.4741C19.6782 29.2284 18.2676 28.5075 17.174 27.4139C16.0804 26.3203 15.3595 24.9097 15.1138 23.3827C14.8681 21.8558 15.1101 20.2902 15.8054 18.9088C16.5008 17.5273 17.614 16.4002 18.9868 15.6879C20.3596 14.9756 21.922 14.7143 23.4519 14.9412C25.0124 15.1726 26.4571 15.8997 27.5726 17.0153C28.6882 18.1308 29.4153 19.5755 29.6467 21.136Z" stroke="#1B1A1A" strokeWidth="2.11765" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M32.4042 12.1838H32.4226" stroke="#1B1A1A" strokeWidth="2.11765" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </a>
-                  <a href={'#'}>
-                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M33.9121 3.91177H28.3974C25.9598 3.91177 23.6219 4.88012 21.8983 6.6038C20.1746 8.32748 19.2062 10.6653 19.2062 13.1029V18.6177H13.6915V25.9706H19.2062V40.6765H26.5592V25.9706H32.0739L33.9121 18.6177H26.5592V13.1029C26.5592 12.6154 26.7528 12.1479 27.0976 11.8031C27.4423 11.4584 27.9099 11.2647 28.3974 11.2647H33.9121V3.91177Z" stroke="#1B1A1A" strokeWidth="2.11765" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
+      <div className={'slider-div position-relative'}>
+        <div className={'banner-img'}>
+          <img
+              className={'img-fluid'}
+              src="/img/banner.png"
+              alt="img" width={'100%'}/>
         </div>
-        <div className={'menu-header'}>
-          <div className={'container'}>
-            <nav className="navbar navbar-expand-lg">
-              <div className="container-fluid">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                  <ul className="navbar-nav">
-                    <li className="nav-item">
-                      <Link href="/" passHref>
-                        <div className={`nav-link ${pathname === '/' ? 'active' : ''}`}>
-                          Home
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="/gallery" passHref>
-                        <div className={`nav-link ${pathname === '/gallery' ? 'active' : ''}`}>
-                          Gallery
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="/location" passHref>
-                        <div className={`nav-link ${pathname === '/lontact' ? 'active' : ''}`}>
-                          Location
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="/location" passHref>
-                        <div className={`nav-link ${pathname === '/contact' ? 'active' : ''}`}>
-                          Contact
-                        </div>
-                      </Link>
-                    </li>
-                  </ul>
-
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <div className={'slider-div'}>
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
-          <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-              className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <BannerCarousel />
-
-
+        <div className={'banner-content wow animate__animated animate__fadeInLeft'}>
+          <h1>
+            Precision Aluminums System Windows,<br/>
+            Built for Performance & Elegance
+          </h1>
+          <a href={'#'} className={'btn btn-default'}>
+            <span>get a free quotation</span>
+          </a>
         </div>
       </div>
-
-      <div className={'client-listing-div py-3'}>
-        <div className={'container-fluid'}>
-          <div className={'row align-items-center'}>
-            <div className={'col-4 col-sm-4 col-md-2 mb-3'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/c1.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-4 col-sm-4 col-md-2 mb-3'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/c2.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-4 col-sm-4 col-md-2 mb-3'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/c3.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-4 col-sm-4 col-md-2 mb-3'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/c4.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-4 col-sm-4 col-md-2 mb-3'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/c5.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-4 col-sm-4 col-md-2 mb-3'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/c6.png"
-                  alt="client" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={'about-div py-5'}>
-        <div className={'container'}>
-          <div className={'row align-items-center'}>
-            <div className={'col-md-6'}>
-              <div className={'about-img-div mb-3'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/about.png"
-                  alt="img" />
-              </div>
-            </div>
-            <div className={'col-md-6'}>
-              <div className={'about-content d-flex flex-column gap-3'}>
-                <h5 className={'d-flex gap-3 align-items-center'}>
-                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect y="0.5" width="16" height="16" rx="8" fill="#218BF4" />
-                  </svg>
-
-                  ABOUT US
-                </h5>
-                <h3>Welcome to <span className={'blue-c'}>Griff's Gifts</span></h3>
-                <p className={'text-muted'}>Griff's Gifts is a fun, family-owned and operated toy and gift store in Keller, TX!</p>
-                <h6>WE MOVED!</h6>
-                <p>
-                  Our new store is now open! You can find us in the Neighborhood Walmart shopping center, next door to:<br />
-                  <b>
-                    Lupe's Cantina &<br />
-                    Jeremiah's Italian Ice at<br />
-                    2122 Rufe Snow Drive, Suite 104
-                  </b>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={'gift-card py-5'}>
-        <div className={'container'}>
-          <div className={'gift-card-container'}>
-            <div className={'row align-items-center'}>
-              <div className={'col-md-4'}>
-                <div className={'gift-card-img'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/add-img.png"
-                    alt="img" />
-                </div>
-              </div>
-              <div className={'col-md-8'}>
-                <div className={'gift-card-content mt-3'}>
-                  <h3 className={'mb-4'}>you can now Buy Gift Cards Online!</h3>
-                  <p className={'mb-4'}>
-                    Super easy and can be send directly to recipient or print and give yourself.
-                  </p>
-                  <a href={'#'} className={'btn'}>
-                    Click Here to Order
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={'product-div py-5'}>
-        <div className={'container'}>
-          <div className={'div-title text-center'}>
-            <h1 className={'mb-4'}><span className={'bg-white'}>Explore <span className={'blue-c'}>Our Products</span></span></h1>
-          </div>
-          <div className={'row justify-content-center'}>
-            <div className={'col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3'}>
-              <div className={'product-card h-100'}>
-                <div className={'product-img'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/p1.png"
-                    alt="img" />
-                </div>
-                <div className={'product-name'}>
-                  <h5>Pokemon Cards!</h5>
-                </div>
-              </div>
-            </div>
-            <div className={'col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3'}>
-              <div className={'product-card h-100'}>
-                <div className={'product-img'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/p2.png"
-                    alt="img" />
-                </div>
-                <div className={'product-name'}>
-                  <h5>Lego Minifigures!</h5>
-                </div>
-              </div>
-            </div>
-            <div className={'col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3'}>
-              <div className={'product-card h-100'}>
-                <div className={'product-img'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/p3.png"
-                    alt="img" />
-                </div>
-                <div className={'product-name'}>
-                  <h5>Amazing Candles & SOAPS</h5>
-                </div>
-              </div>
-            </div>
-            <div className={'col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3'}>
-              <div className={'product-card h-100'}>
-                <div className={'product-img'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/p4.png"
-                    alt="img" />
-                </div>
-                <div className={'product-name'}>
-                  <h5>Local, Hand-Crafted Products!</h5>
-                </div>
-              </div>
-            </div>
-            <div className={'col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3'}>
-              <div className={'product-card h-100'}>
-                <div className={'product-img'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/p5.png"
-                    alt="img" />
-                </div>
-                <div className={'product-name'}>
-                  <h5>Vintage Star Wars Figures!</h5>
-                </div>
-              </div>
-            </div>
-            <div className={'col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3'}>
-              <div className={'product-card h-100'}>
-                <div className={'product-img'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/p6.png"
-                    alt="img" />
-                </div>
-                <div className={'product-name'}>
-                  <h5>Great Jewelry!</h5>
-                </div>
-              </div>
-            </div>
-            <div className={'col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3'}>
-              <div className={'product-card h-100'}>
-                <div className={'product-img'}>
-                  <img
-                    className={'img-fluid'}
-                    src="/img/p7.png"
-                    alt="img" />
-                </div>
-                <div className={'product-name'}>
-                  <h5>Harry Potter Wands & More!</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={'btn-div mt-3 text-center'}>
-            <a href={'#'} className={'btn btn-primary'}>
-              View Our Gallary
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className={'video-div'}>
-        <iframe width="100%" height="650" src="https://www.youtube.com/embed/MzJTRFuq-ns?si=33z-s_vdGm3Kp5RV"
-          title="YouTube video player" frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen></iframe>
-      </div>
-
-      <div className={'offer-div py-5'}>
+      <div className={'client-div py-5'}>
         <div className={'container'}>
           <div className={'row'}>
             <div className={'col-md-12'}>
-              <div className={'offer-con'}>
-                <div className={'offer-box'}>
-                  <p className={'mb-3'}>
-                    We offer an amazing selection of gifts for all ages and occasions that have been carefully selected from the best suppliers in the world.
-                  </p>
-                  <p>
-                    Check out our Instagram and Facebook pages, or the Gallery here, for a sneak peek of what offer. A sample of the brands that we carry can also be found below. Every week we bring in new products so check back often!
-                  </p>
+              <p className={'text-center text-primary client-title mb-4 wow animate__animated animate__fadeInDown'}>We’ve worked on 500+ projects with 100+ global clients</p>
+              <div className={'client-list'}>
+                <div className={'client-box'}>
+                  <img
+                      className={'img-fluid wow animate__animated animate__zoomIn'}
+                      src="/img/client1.png"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'client-box'}>
+                  <img
+                      className={'img-fluid wow animate__animated animate__zoomIn'}
+                      src="/img/client2.png"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'client-box'}>
+                  <img
+                      className={'img-fluid wow animate__animated animate__zoomIn'}
+                      src="/img/client3.png"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'client-box'}>
+                  <img
+                      className={'img-fluid wow animate__animated animate__zoomIn'}
+                      src="/img/client4.png"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'client-box'}>
+                  <img
+                      className={'img-fluid wow animate__animated animate__zoomIn'}
+                      src="/img/client5.png"
+                      alt="img" width={'100%'}/>
                 </div>
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
-
-      <div className={'testimonial-div'}>
+      <div className={'explore-section py-5'}>
         <div className={'container'}>
           <div className={'row'}>
             <div className={'col-md-12'}>
-              <div className={'testimonial-box d-flex justify-content-center gap-3 flex-column align-items-center'}>
-                <div className={'rating-star d-flex gap-2'}>
-                  <svg className={'active'} width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.50002 14.2752L5.35002 16.7752C5.16669 16.8919 4.97502 16.9419 4.77502 16.9252C4.57502 16.9085 4.40002 16.8419 4.25002 16.7252C4.10002 16.6085 3.98336 16.4629 3.90002 16.2882C3.81669 16.1135 3.80002 15.9175 3.85002 15.7002L4.95002 10.9752L1.27502 7.8002C1.10836 7.6502 1.00436 7.4792 0.963024 7.2872C0.92169 7.0952 0.934024 6.90786 1.00002 6.7252C1.06602 6.54253 1.16602 6.39253 1.30002 6.2752C1.43402 6.15786 1.61736 6.08286 1.85002 6.0502L6.70002 5.6252L8.57502 1.1752C8.65836 0.975195 8.78769 0.825195 8.96302 0.725195C9.13836 0.625195 9.31736 0.575195 9.50002 0.575195C9.68269 0.575195 9.86169 0.625195 10.037 0.725195C10.2124 0.825195 10.3417 0.975195 10.425 1.1752L12.3 5.6252L17.15 6.0502C17.3834 6.08353 17.5667 6.15853 17.7 6.2752C17.8334 6.39186 17.9334 6.54186 18 6.7252C18.0667 6.90853 18.0794 7.0962 18.038 7.2882C17.9967 7.4802 17.8924 7.65086 17.725 7.8002L14.05 10.9752L15.15 15.7002C15.2 15.9169 15.1834 16.1129 15.1 16.2882C15.0167 16.4635 14.9 16.6092 14.75 16.7252C14.6 16.8412 14.425 16.9079 14.225 16.9252C14.025 16.9425 13.8334 16.8925 13.65 16.7752L9.50002 14.2752Z" fill="white" />
-                  </svg>
-                  <svg className={'active'} width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.50002 14.2752L5.35002 16.7752C5.16669 16.8919 4.97502 16.9419 4.77502 16.9252C4.57502 16.9085 4.40002 16.8419 4.25002 16.7252C4.10002 16.6085 3.98336 16.4629 3.90002 16.2882C3.81669 16.1135 3.80002 15.9175 3.85002 15.7002L4.95002 10.9752L1.27502 7.8002C1.10836 7.6502 1.00436 7.4792 0.963024 7.2872C0.92169 7.0952 0.934024 6.90786 1.00002 6.7252C1.06602 6.54253 1.16602 6.39253 1.30002 6.2752C1.43402 6.15786 1.61736 6.08286 1.85002 6.0502L6.70002 5.6252L8.57502 1.1752C8.65836 0.975195 8.78769 0.825195 8.96302 0.725195C9.13836 0.625195 9.31736 0.575195 9.50002 0.575195C9.68269 0.575195 9.86169 0.625195 10.037 0.725195C10.2124 0.825195 10.3417 0.975195 10.425 1.1752L12.3 5.6252L17.15 6.0502C17.3834 6.08353 17.5667 6.15853 17.7 6.2752C17.8334 6.39186 17.9334 6.54186 18 6.7252C18.0667 6.90853 18.0794 7.0962 18.038 7.2882C17.9967 7.4802 17.8924 7.65086 17.725 7.8002L14.05 10.9752L15.15 15.7002C15.2 15.9169 15.1834 16.1129 15.1 16.2882C15.0167 16.4635 14.9 16.6092 14.75 16.7252C14.6 16.8412 14.425 16.9079 14.225 16.9252C14.025 16.9425 13.8334 16.8925 13.65 16.7752L9.50002 14.2752Z" fill="white" />
-                  </svg>
-                  <svg className={'active'} width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.50002 14.2752L5.35002 16.7752C5.16669 16.8919 4.97502 16.9419 4.77502 16.9252C4.57502 16.9085 4.40002 16.8419 4.25002 16.7252C4.10002 16.6085 3.98336 16.4629 3.90002 16.2882C3.81669 16.1135 3.80002 15.9175 3.85002 15.7002L4.95002 10.9752L1.27502 7.8002C1.10836 7.6502 1.00436 7.4792 0.963024 7.2872C0.92169 7.0952 0.934024 6.90786 1.00002 6.7252C1.06602 6.54253 1.16602 6.39253 1.30002 6.2752C1.43402 6.15786 1.61736 6.08286 1.85002 6.0502L6.70002 5.6252L8.57502 1.1752C8.65836 0.975195 8.78769 0.825195 8.96302 0.725195C9.13836 0.625195 9.31736 0.575195 9.50002 0.575195C9.68269 0.575195 9.86169 0.625195 10.037 0.725195C10.2124 0.825195 10.3417 0.975195 10.425 1.1752L12.3 5.6252L17.15 6.0502C17.3834 6.08353 17.5667 6.15853 17.7 6.2752C17.8334 6.39186 17.9334 6.54186 18 6.7252C18.0667 6.90853 18.0794 7.0962 18.038 7.2882C17.9967 7.4802 17.8924 7.65086 17.725 7.8002L14.05 10.9752L15.15 15.7002C15.2 15.9169 15.1834 16.1129 15.1 16.2882C15.0167 16.4635 14.9 16.6092 14.75 16.7252C14.6 16.8412 14.425 16.9079 14.225 16.9252C14.025 16.9425 13.8334 16.8925 13.65 16.7752L9.50002 14.2752Z" fill="white" />
-                  </svg>
-                  <svg className={'active'} width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.50002 14.2752L5.35002 16.7752C5.16669 16.8919 4.97502 16.9419 4.77502 16.9252C4.57502 16.9085 4.40002 16.8419 4.25002 16.7252C4.10002 16.6085 3.98336 16.4629 3.90002 16.2882C3.81669 16.1135 3.80002 15.9175 3.85002 15.7002L4.95002 10.9752L1.27502 7.8002C1.10836 7.6502 1.00436 7.4792 0.963024 7.2872C0.92169 7.0952 0.934024 6.90786 1.00002 6.7252C1.06602 6.54253 1.16602 6.39253 1.30002 6.2752C1.43402 6.15786 1.61736 6.08286 1.85002 6.0502L6.70002 5.6252L8.57502 1.1752C8.65836 0.975195 8.78769 0.825195 8.96302 0.725195C9.13836 0.625195 9.31736 0.575195 9.50002 0.575195C9.68269 0.575195 9.86169 0.625195 10.037 0.725195C10.2124 0.825195 10.3417 0.975195 10.425 1.1752L12.3 5.6252L17.15 6.0502C17.3834 6.08353 17.5667 6.15853 17.7 6.2752C17.8334 6.39186 17.9334 6.54186 18 6.7252C18.0667 6.90853 18.0794 7.0962 18.038 7.2882C17.9967 7.4802 17.8924 7.65086 17.725 7.8002L14.05 10.9752L15.15 15.7002C15.2 15.9169 15.1834 16.1129 15.1 16.2882C15.0167 16.4635 14.9 16.6092 14.75 16.7252C14.6 16.8412 14.425 16.9079 14.225 16.9252C14.025 16.9425 13.8334 16.8925 13.65 16.7752L9.50002 14.2752Z" fill="white" />
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.50002 14.2752L5.35002 16.7752C5.16669 16.8919 4.97502 16.9419 4.77502 16.9252C4.57502 16.9085 4.40002 16.8419 4.25002 16.7252C4.10002 16.6085 3.98336 16.4629 3.90002 16.2882C3.81669 16.1135 3.80002 15.9175 3.85002 15.7002L4.95002 10.9752L1.27502 7.8002C1.10836 7.6502 1.00436 7.4792 0.963024 7.2872C0.92169 7.0952 0.934024 6.90786 1.00002 6.7252C1.06602 6.54253 1.16602 6.39253 1.30002 6.2752C1.43402 6.15786 1.61736 6.08286 1.85002 6.0502L6.70002 5.6252L8.57502 1.1752C8.65836 0.975195 8.78769 0.825195 8.96302 0.725195C9.13836 0.625195 9.31736 0.575195 9.50002 0.575195C9.68269 0.575195 9.86169 0.625195 10.037 0.725195C10.2124 0.825195 10.3417 0.975195 10.425 1.1752L12.3 5.6252L17.15 6.0502C17.3834 6.08353 17.5667 6.15853 17.7 6.2752C17.8334 6.39186 17.9334 6.54186 18 6.7252C18.0667 6.90853 18.0794 7.0962 18.038 7.2882C17.9967 7.4802 17.8924 7.65086 17.725 7.8002L14.05 10.9752L15.15 15.7002C15.2 15.9169 15.1834 16.1129 15.1 16.2882C15.0167 16.4635 14.9 16.6092 14.75 16.7252C14.6 16.8412 14.425 16.9079 14.225 16.9252C14.025 16.9425 13.8334 16.8925 13.65 16.7752L9.50002 14.2752Z" fill="white" />
-                  </svg>
-                </div>
-                <h5 className={'text-white text-center'}>
-                  I love how personal the service is at Griff’s Gifts. The free gift wrapping was such a nice touch, and the staff even helped me pick out the perfect greeting card. It’s rare to find a shop that feels this welcoming.
-                </h5>
-                <div className={'user-div text-center'}>
-                  <div className={'usr-img'}>
-                    <img
-                      className={'img-fluid'}
-                      src="/img/user.png"
-                      alt="img" />
-                  </div>
-                  <p className={'blue-c'}>Lisa P.</p>
-                </div>
+              <div className={'title-div text-center mb-4'}>
+                <h3 className={'mb-3 wow animate__animated animate__fadeInDown'}>Explore Aluminums Window Systems</h3>
+                <p className={' wow animate__animated animate__fadeInUp'}>From sleek sliding panels to high-performance thermal break systems, ThermWin offers a complete range
+                  of aluminium windows designed for style, strength, and sustainability.</p>
               </div>
+
             </div>
+
           </div>
-        </div>
-      </div>
-
-      <div className={'client-listing-div py-3'}>
-        <div className={'container-fluid'}>
-          <div className={'row align-items-center'}>
-            <div className={'col-6 col-sm-4 col-md-2'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/s1.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-6 col-sm-4 col-md-2'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/s2.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-6 col-sm-4 col-md-2'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/s3.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-6 col-sm-4 col-md-2'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/s1.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-6 col-sm-4 col-md-2'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/s2.png"
-                  alt="client" />
-              </div>
-            </div>
-            <div className={'col-6 col-sm-4 col-md-2'}>
-              <div className={'client-div'}>
-                <img
-                  className={'img-fluid'}
-                  src="/img/s3.png"
-                  alt="client" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={'subscribe-div py-5'}>
-        <div className={'container'}>
-          <div className={'div-title text-center'}>
-            <h1><span className={'bg-white'}>Want to join <span className={'blue-c'}> Our Mailing List?</span></span></h1>
-            <p className={'text-muted mb-5'}>
-              Sign up to our newsletter to stay up to date and be among the first to know when our official Grand Opening will occur.
-            </p>
-          </div>
-          <div className={'input-group'}>
-            <input type={'text'} className={'form-control'} placeholder={'Your email address '} />
-            <button className={'btn btn-primary'}>Subscribe</button>
-          </div>
-        </div>
-      </div>
-
-      <footer className={'main-footer'}>
-        <div className={'py-5'}>
-          <div className={'container'}>
-            <div className={'row row-gap-2'}>
-              <div className={'col-md-3'}>
-                <div className={'footer-div'}>
-                  <h5>Griff’s Gifts</h5>
-                  <p>
-                    Griff's Gifts is a Keller family owned and operated store.
-                  </p>
-                  <div className={'footer-social'}>
-                    <a href={'#'}>
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.5102 2.979H9.48934C5.89374 2.979 2.97893 5.89382 2.97893 9.48942V22.5103C2.97893 26.1059 5.89374 29.0207 9.48934 29.0207H22.5102C26.1058 29.0207 29.0206 26.1059 29.0206 22.5103V9.48942C29.0206 5.89382 26.1058 2.979 22.5102 2.979Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M21.2081 15.1802C21.3688 16.2639 21.1837 17.3706 20.6792 18.343C20.1746 19.3154 19.3763 20.1039 18.3978 20.5964C17.4192 21.089 16.3103 21.2604 15.2287 21.0864C14.1471 20.9123 13.1479 20.4017 12.3733 19.627C11.5987 18.8524 11.088 17.8532 10.914 16.7716C10.7399 15.69 10.9114 14.5811 11.4039 13.6026C11.8964 12.624 12.6849 11.8257 13.6573 11.3211C14.6297 10.8166 15.7365 10.6315 16.8201 10.7922C17.9255 10.9561 18.9488 11.4712 19.739 12.2613C20.5292 13.0515 21.0442 14.0748 21.2081 15.1802Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M23.1613 8.83887H23.1744" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </a>
-                    <a href={'#'}>
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.8126 2.979H19.9063C18.1797 2.979 16.5237 3.66492 15.3028 4.88586C14.0818 6.1068 13.3959 7.76275 13.3959 9.48942V13.3957H9.48965V18.604H13.3959V29.0207H18.6042V18.604H22.5105L23.8126 13.3957H18.6042V9.48942C18.6042 9.14409 18.7414 8.8129 18.9856 8.56871C19.2298 8.32452 19.561 8.18734 19.9063 8.18734H23.8126V2.979Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className={'col-md-3'}>
-                <div className={'footer-div'}>
-                  <h5>Quick LINKS</h5>
-                  <div className={'page-link-div'}>
-                    <a href={'#'}>Home</a>
-                    <a href={'#'}>Gallery</a>
-                    <a href={'#'}>Location</a>
-                    <a href={'#'}>Contact Us</a>
-                  </div>
-
-                </div>
-              </div>
-              <div className={'col-md-3'}>
-                <div className={'footer-div'}>
-                  <h5>Contact</h5>
-                  <div className={'contact-box'}>
-                    <div>
-                      <svg width="24" height="33" viewBox="0 0 24 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 26.0001C14.7348 26.0001 14.4804 25.8948 14.2929 25.7073C14.1054 25.5197 14 25.2654 14 25.0001V21.0001C14 20.8356 14.0406 20.6735 14.1182 20.5284C14.1958 20.3832 14.3081 20.2595 14.445 20.1681L17.445 18.1681C17.6093 18.0585 17.8025 18 18 18C18.1975 18 18.3907 18.0585 18.555 18.1681L21.555 20.1681C21.6919 20.2595 21.8042 20.3832 21.8818 20.5284C21.9594 20.6735 22 20.8356 22 21.0001V25.0001C22 25.2654 21.8946 25.5197 21.7071 25.7073C21.5196 25.8948 21.2652 26.0001 21 26.0001H15Z" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M18 14C18 11.8783 17.1571 9.84344 15.6569 8.34315C14.1566 6.84285 12.1217 6 10 6C7.87827 6 5.84344 6.84285 4.34315 8.34315C2.84285 9.84344 2 11.8783 2 14C2 18.993 7.539 24.193 9.399 25.799C9.57237 25.929 9.78329 25.9992 10 25.999" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M18 26V23" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M10 17C11.6569 17 13 15.6569 13 14C13 12.3431 11.6569 11 10 11C8.34315 11 7 12.3431 7 14C7 15.6569 8.34315 17 10 17Z" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                      <p>
-                        2122 Rufe Snow Drive Suite 104 Keller, TX 76248, US
-                      </p>
-                    </div>
-                    <div>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 16.9201V19.9201C22.0011 20.1986 21.9441 20.4743 21.8325 20.7294C21.7209 20.9846 21.5573 21.2137 21.3521 21.402C21.1468 21.5902 20.9046 21.7336 20.6407 21.8228C20.3769 21.912 20.0974 21.9452 19.82 21.9201C16.7428 21.5857 13.787 20.5342 11.19 18.8501C8.77382 17.3148 6.72533 15.2663 5.18999 12.8501C3.49997 10.2413 2.44824 7.27109 2.11999 4.1801C2.095 3.90356 2.12787 3.62486 2.21649 3.36172C2.30512 3.09859 2.44756 2.85679 2.63476 2.65172C2.82196 2.44665 3.0498 2.28281 3.30379 2.17062C3.55777 2.05843 3.83233 2.00036 4.10999 2.0001H7.10999C7.5953 1.99532 8.06579 2.16718 8.43376 2.48363C8.80173 2.80008 9.04207 3.23954 9.10999 3.7201C9.23662 4.68016 9.47144 5.62282 9.80999 6.5301C9.94454 6.88802 9.97366 7.27701 9.8939 7.65098C9.81415 8.02494 9.62886 8.36821 9.35999 8.6401L8.08999 9.9101C9.51355 12.4136 11.5864 14.4865 14.09 15.9101L15.36 14.6401C15.6319 14.3712 15.9751 14.1859 16.3491 14.1062C16.7231 14.0264 17.1121 14.0556 17.47 14.1901C18.3773 14.5286 19.3199 14.7635 20.28 14.8901C20.7658 14.9586 21.2094 15.2033 21.5265 15.5776C21.8437 15.9519 22.0122 16.4297 22 16.9201Z" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M14.05 2C16.0882 2.21477 17.9922 3.1188 19.4469 4.56258C20.9015 6.00636 21.8199 7.90341 22.05 9.94" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M14.05 6C15.0335 6.19394 15.936 6.67903 16.6404 7.39231C17.3447 8.10559 17.8184 9.01413 18 10" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-
-                      <p>
-                        817-393-3335
-                      </p>
-                    </div>
-                    <div>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7" stroke="#B3B3B3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                      <p>
-                        sean@griffsgiftshop.com
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div className={'col-md-3'}>
-                <div className={'footer-div'}>
-                  <h5>Business Hours</h5>
-                  <div className={'row'}>
-                    <div className={'col-4'}>
-                      <h6>Mon - Fri</h6>
-                    </div>
-                    <div className={'col-8'}>
-                      <p>(11:00am – 07:00pm)</p>
-                    </div>
-                  </div>
-                  <div className={'row'}>
-                    <div className={'col-4'}>
-                      <h6>Saturday</h6>
-                    </div>
-                    <div className={'col-8'}>
-                      <p>(11:00am – 07:00pm)</p>
-                    </div>
-                  </div>
-                  <div className={'row'}>
-                    <div className={'col-4'}>
-                      <h6>Sunday</h6>
-                    </div>
-                    <div className={'col-8'}>
-                      <p> (Closed)</p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={'copyright-div'}>
-          <div className={'container'}>
+          <div className={'explore-list'}>
             <div className={'row'}>
-              <div className={'col-md-6'}>
-                <p>
-                  © Copyright - DogFence Ltd, a company registered in England number 08724449.
-                </p>
+              <div className={'col-md-4'}>
+                <div className={'explore-card wow animate__animated animate__fadeInDown'}>
+                  <div className={'explore-img'}>
+                    <img
+                        className={'img-fluid'}
+                        src="/img/ws1.jpg"
+                        alt="img" width={'100%'}/>
+                  </div>
+                  <div className={'explore-content'}>
+                    <svg width="68" height="60" viewBox="0 0 68 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_66_62)">
+                        <path
+                            d="M37.7778 3.74972C37.7778 2.58956 37.2465 1.49972 36.3257 0.796592C35.4049 0.0934675 34.2125 -0.164345 33.0792 0.116905L11.841 5.39034C9.32639 6.01144 7.55556 8.26144 7.55556 10.8396V52.4997H3.77778C1.68819 52.4997 0 54.1755 0 56.2497C0 58.3239 1.68819 59.9997 3.77778 59.9997H11.3333H34H37.7778V56.2497V3.74972ZM30.2222 29.9997C30.2222 32.0739 28.959 33.7497 27.3889 33.7497C25.8187 33.7497 24.5556 32.0739 24.5556 29.9997C24.5556 27.9255 25.8187 26.2497 27.3889 26.2497C28.959 26.2497 30.2222 27.9255 30.2222 29.9997ZM41.5556 14.9997H52.8889V56.2497C52.8889 58.3239 54.5771 59.9997 56.6667 59.9997H64.2222C66.3118 59.9997 68 58.3239 68 56.2497C68 54.1755 66.3118 52.4997 64.2222 52.4997H60.4444V14.9997C60.4444 10.863 57.0562 7.49972 52.8889 7.49972H41.5556V14.9997Z"
+                            fill="#1C233A"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_66_62">
+                          <rect width="68" height="60" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+
+                    <h4>Openable System Series</h4>
+                    <p>
+                      The Openable Series offers versatility and ventilation without compromising on performance. With
+                      advanced hinge options and elegant finishes, these windows are perfect for spaces where
+                      accessibility and airflow matter most.
+                    </p>
+                    <div className={'tag-list'}>
+                      <label>Aeroview Series</label>
+                      <label>Archview Series</label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className={'col-md-6'}>
-                <div className={'d-flex gap-2 flex-wrap justify-content-end'}>
-                  <a href={'#'}>Customer Service</a>
-                  <a href={'#'}>Terms and Conditions</a>
-                  <a href={'#'}>Key Risks</a>
+              <div className={'col-md-4'}>
+                <div className={'explore-card wow animate__animated animate__fadeInUp'}>
+                  <div className={'explore-content'}>
+                    <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_68_68)">
+                        <path
+                            d="M54.375 6.125V54.875H5.625V6.125H54.375ZM5.625 0.5H0V6.125V54.875V60.5H5.625H54.375H60V54.875V6.125V0.5H54.375H5.625Z"
+                            fill="#1C233A"/>
+                        <rect y="0.5" width="30" height="60" fill="#1C233A"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_68_68">
+                          <rect width="60" height="60" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h4>Sliding System</h4>
+                    <p>
+                      Our Sliding Systems are crafted for modern living — combining space-saving functionality with
+                      contemporary aesthetics. Ideal for homes and offices that demand smooth operation, weather
+                      resistance, and clean architectural lines.
+                    </p>
+                    <div className={'tag-list'}>
+                      <label>V Ran Series</label>
+                      <label>O Ran Series</label>
+                      <label>U Ran Series</label>
+                      <label>Lusso Series</label>
+                      <label>E Line Series</label>
+                    </div>
+                  </div>
+                  <div className={'explore-img'}>
+                    <img
+                        className={'img-fluid'}
+                        src="/img/ws2.jpg"
+                        alt="img" width={'100%'}/>
+                  </div>
+                </div>
+              </div>
+              <div className={'col-md-4'}>
+                <div className={'explore-card wow animate__animated animate__fadeInDown'}>
+                  <div className={'explore-img'}>
+                    <img
+                        className={'img-fluid'}
+                        src="/img/ws3.jpg"
+                        alt="img" width={'100%'}/>
+                  </div>
+                  <div className={'explore-content'}>
+                    <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_66_65)">
+                        <path
+                            d="M52.5 11.75C52.5 10.7554 52.1049 9.80161 51.4016 9.09835C50.6984 8.39509 49.7446 8 48.75 8C47.7554 8 46.8016 8.39509 46.0984 9.09835C45.3951 9.80161 45 10.7554 45 11.75C45 12.7446 45.3951 13.6984 46.0984 14.4017C46.8016 15.1049 47.7554 15.5 48.75 15.5C49.7446 15.5 50.6984 15.1049 51.4016 14.4017C52.1049 13.6984 52.5 12.7446 52.5 11.75ZM37.5 11.75C37.5 8.76631 38.6853 5.90483 40.795 3.79505C42.9048 1.68526 45.7663 0.5 48.75 0.5C51.7337 0.5 54.5952 1.68526 56.705 3.79505C58.8147 5.90483 60 8.76631 60 11.75C60 14.7337 58.8147 17.5952 56.705 19.705C54.5952 21.8147 51.7337 23 48.75 23C45.7663 23 42.9048 21.8147 40.795 19.705C38.6853 17.5952 37.5 14.7337 37.5 11.75ZM16.875 8C13.7695 8 11.25 10.5195 11.25 13.625V32.9023C11.25 34.9297 10.418 36.6406 9.45703 37.8828C8.22656 39.4766 7.5 41.457 7.5 43.625C7.5 48.8047 11.6953 53 16.875 53C22.0547 53 26.25 48.8047 26.25 43.625C26.25 41.457 25.5234 39.4766 24.293 37.8945C23.332 36.6523 22.5 34.9414 22.5 32.9141V13.625C22.5 10.5195 19.9805 8 16.875 8ZM3.75 13.625C3.75 6.38281 9.62109 0.5 16.875 0.5C24.1289 0.5 30 6.37109 30 13.625V32.8906C30 32.9023 30.0117 32.9258 30.0234 32.9609C30.0469 33.0312 30.1172 33.1484 30.2227 33.2891C32.4375 36.1484 33.75 39.7344 33.75 43.6133C33.75 52.9297 26.1914 60.4883 16.875 60.4883C7.55859 60.4883 0 52.9414 0 43.625C0 39.7344 1.3125 36.1484 3.52734 33.3008C3.63281 33.1602 3.70312 33.043 3.72656 32.9727C3.73828 32.9375 3.75 32.9141 3.75 32.9023V13.625ZM22.5 43.625C22.5 46.7305 19.9805 49.25 16.875 49.25C13.7695 49.25 11.25 46.7305 11.25 43.625C11.25 41.1758 12.8203 39.0898 15 38.3164V32.375C15 31.3438 15.8438 30.5 16.875 30.5C17.9062 30.5 18.75 31.3438 18.75 32.375V38.3164C20.9297 39.0898 22.5 41.1758 22.5 43.625Z"
+                            fill="#1C233A"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_66_65">
+                          <rect width="60" height="60" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+
+                    <h4>Thermal Break System Series</h4>
+                    <p>
+                      Built to withstand harsh temperatures, our Thermal Break Systems feature cutting-edge insulation
+                      technology that maintains interior comfort — whether you're facing intense heat or chilling cold.
+                      Ideal for eco-conscious and high-performance projects.
+                    </p>
+                    <div className={'tag-list'}>
+                      <label>Thermwin Rin Series</label>
+                      <label>Thermwin Minimal Series</label>
+                      <label>Thermwin Aero Series</label>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+      <div className={'learn-section'}>
+        <div className={'container'}>
+          <div className={'row align-items-center'}>
+            <div className={'col-md-6'}>
+              <div className={'learn-img position-relative'}>
+                <div className={'lt mb-4 wow animate__animated animate__fadeInLeft'}>
+                  <img
+                      className={'img-fluid'}
+                      src="/img/t1.jpg"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'cities wow animate__animated animate__zoomIn'}>
+                  <h4>50+</h4>
+                  <p>architects in 10+ cities</p>
+                </div>
+                <div className={'lt ms-auto wow animate__animated animate__fadeInRight'}>
+                  <img
+                      className={'img-fluid'}
+                      src="/img/b1.jpg"
+                      alt="img" width={'100%'}/>
+                </div>
+
+              </div>
+            </div>
+            <div className={'col-md-6'}>
+              <div className={'title-div mb-4 wow animate__animated animate__fadeInRight'}>
+                <h3 className={'mb-3 text-primary'}>Explore Aluminums Window Systems</h3>
+                <p className={'mb-3 d-flex gap-2'}>Established in 2023, ThermWin System Windows is a modern aluminium window solutions provider driven
+                  by quality, innovation, and customer satisfaction. What began with a single order has quickly evolved
+                  into a fast-growing brand, now managing multiple projects with top architects and expanding across
+                  India.</p>
+                <p className={'mb-3 d-flex gap-2'}>At ThermWin, we don’t just build windows — we build trust. Every product is engineered with technical
+                  precision and backed by a 10-year guarantee, ensuring long-lasting performance, energy efficiency, and
+                  superior aesthetics.</p>
+                <p className={'mb-3 d-flex gap-2'}>
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.17411 17.5312C3.34375 17.3616 3.42857 17.1607 3.42857 16.9286C3.42857 16.6964 3.34375 16.4955 3.17411 16.3259C3.00446 16.1562 2.80357 16.0714 2.57143 16.0714C2.33929 16.0714 2.13839 16.1562 1.96875 16.3259C1.79911 16.4955 1.71429 16.6964 1.71429 16.9286C1.71429 17.1607 1.79911 17.3616 1.96875 17.5312C2.13839 17.7009 2.33929 17.7857 2.57143 17.7857C2.80357 17.7857 3.00446 17.7009 3.17411 17.5312ZM22.2857 9.21428C22.2857 8.75893 22.1116 8.36161 21.7634 8.02232C21.4152 7.67411 21.0179 7.5 20.5714 7.5H12.8571C12.8571 7.32143 12.9241 7.10714 13.058 6.85714C13.192 6.59821 13.3393 6.35268 13.5 6.12053C13.6607 5.87946 13.808 5.57589 13.942 5.20982C14.0759 4.83482 14.1429 4.45536 14.1429 4.07143C14.1429 3.47321 13.942 3.04018 13.5402 2.77232C13.1473 2.49554 12.6339 2.35714 12 2.35714C11.7857 2.35714 11.3839 2.97768 10.7946 4.21875C10.5804 4.61161 10.4152 4.90178 10.2991 5.08928C9.94196 5.66071 9.44196 6.30803 8.79911 7.03125C8.16518 7.75446 7.71429 8.22768 7.44643 8.45089C6.83036 8.95982 6.20536 9.21428 5.57143 9.21428H5.14286V17.7857H5.57143C6.21429 17.7857 6.95982 17.9286 7.80804 18.2143C8.65625 18.5 9.51786 18.7857 10.3929 19.0714C11.2768 19.3571 12.0804 19.5 12.8036 19.5C14.4911 19.5 15.3348 18.7545 15.3348 17.2634C15.3348 17.0312 15.3125 16.7812 15.2679 16.5134C15.5357 16.3705 15.7455 16.1384 15.8973 15.817C16.058 15.4866 16.1384 15.1562 16.1384 14.8259C16.1384 14.4955 16.058 14.1875 15.8973 13.9018C16.3705 13.4554 16.6071 12.9241 16.6071 12.308C16.6071 12.0848 16.5625 11.8393 16.4732 11.5714C16.3839 11.2946 16.2723 11.0804 16.1384 10.9286H20.5714C21.0357 10.9286 21.4375 10.7589 21.7768 10.4196C22.1161 10.0804 22.2857 9.67857 22.2857 9.21428ZM24 9.20089C24 10.1384 23.6607 10.9464 22.9821 11.625C22.3125 12.3036 21.5089 12.6429 20.5714 12.6429H18.308C18.2723 13.1964 18.1071 13.7277 17.8125 14.2366C17.8393 14.4241 17.8527 14.6161 17.8527 14.8125C17.8527 15.7143 17.5848 16.5089 17.0491 17.1964C17.058 18.4375 16.6786 19.4152 15.9107 20.1295C15.1429 20.8527 14.1295 21.2143 12.8705 21.2143C11.683 21.2143 10.2455 20.9063 8.55804 20.2902C7.09375 19.7634 6.09821 19.5 5.57143 19.5H1.71429C1.24107 19.5 0.834821 19.3348 0.495536 19.0045C0.165179 18.6652 0 18.2589 0 17.7857V9.21428C0 8.74107 0.165179 8.33929 0.495536 8.00893C0.834821 7.66964 1.24107 7.5 1.71429 7.5H5.57143C5.66071 7.5 5.75446 7.48214 5.85268 7.44643C5.95982 7.40178 6.06696 7.33928 6.17411 7.25893C6.28125 7.16964 6.37946 7.08929 6.46875 7.01786C6.56696 6.9375 6.67411 6.83482 6.79018 6.70982C6.91518 6.58482 7.00893 6.49107 7.07143 6.42857C7.13393 6.35714 7.21875 6.25893 7.32589 6.13393C7.43304 6.00893 7.49554 5.93303 7.51339 5.90625C8.09375 5.24553 8.54018 4.66964 8.85268 4.17857C8.96875 3.99107 9.11607 3.71429 9.29464 3.34821C9.47321 2.98214 9.63839 2.66071 9.79018 2.38393C9.94196 2.10714 10.1205 1.82589 10.3259 1.54018C10.5402 1.25446 10.7857 1.03571 11.0625 0.883927C11.3482 0.723213 11.6607 0.642856 12 0.642856C13.1161 0.642856 14.0357 0.941963 14.7589 1.54018C15.4911 2.13839 15.8571 2.98214 15.8571 4.07143C15.8571 4.67857 15.7589 5.25 15.5625 5.78571H20.5714C21.5 5.78571 22.3036 6.125 22.9821 6.80357C23.6607 7.48214 24 8.28125 24 9.20089Z"
+                        fill="#1C233A"/>
+                  </svg>
+
+                  <b>Quality with Assurance</b> – Built to last, tested for performance
+                </p>
+                <p className={'mb-3 d-flex gap-2'}>
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.17411 17.5312C3.34375 17.3616 3.42857 17.1607 3.42857 16.9286C3.42857 16.6964 3.34375 16.4955 3.17411 16.3259C3.00446 16.1562 2.80357 16.0714 2.57143 16.0714C2.33929 16.0714 2.13839 16.1562 1.96875 16.3259C1.79911 16.4955 1.71429 16.6964 1.71429 16.9286C1.71429 17.1607 1.79911 17.3616 1.96875 17.5312C2.13839 17.7009 2.33929 17.7857 2.57143 17.7857C2.80357 17.7857 3.00446 17.7009 3.17411 17.5312ZM22.2857 9.21428C22.2857 8.75893 22.1116 8.36161 21.7634 8.02232C21.4152 7.67411 21.0179 7.5 20.5714 7.5H12.8571C12.8571 7.32143 12.9241 7.10714 13.058 6.85714C13.192 6.59821 13.3393 6.35268 13.5 6.12053C13.6607 5.87946 13.808 5.57589 13.942 5.20982C14.0759 4.83482 14.1429 4.45536 14.1429 4.07143C14.1429 3.47321 13.942 3.04018 13.5402 2.77232C13.1473 2.49554 12.6339 2.35714 12 2.35714C11.7857 2.35714 11.3839 2.97768 10.7946 4.21875C10.5804 4.61161 10.4152 4.90178 10.2991 5.08928C9.94196 5.66071 9.44196 6.30803 8.79911 7.03125C8.16518 7.75446 7.71429 8.22768 7.44643 8.45089C6.83036 8.95982 6.20536 9.21428 5.57143 9.21428H5.14286V17.7857H5.57143C6.21429 17.7857 6.95982 17.9286 7.80804 18.2143C8.65625 18.5 9.51786 18.7857 10.3929 19.0714C11.2768 19.3571 12.0804 19.5 12.8036 19.5C14.4911 19.5 15.3348 18.7545 15.3348 17.2634C15.3348 17.0312 15.3125 16.7812 15.2679 16.5134C15.5357 16.3705 15.7455 16.1384 15.8973 15.817C16.058 15.4866 16.1384 15.1562 16.1384 14.8259C16.1384 14.4955 16.058 14.1875 15.8973 13.9018C16.3705 13.4554 16.6071 12.9241 16.6071 12.308C16.6071 12.0848 16.5625 11.8393 16.4732 11.5714C16.3839 11.2946 16.2723 11.0804 16.1384 10.9286H20.5714C21.0357 10.9286 21.4375 10.7589 21.7768 10.4196C22.1161 10.0804 22.2857 9.67857 22.2857 9.21428ZM24 9.20089C24 10.1384 23.6607 10.9464 22.9821 11.625C22.3125 12.3036 21.5089 12.6429 20.5714 12.6429H18.308C18.2723 13.1964 18.1071 13.7277 17.8125 14.2366C17.8393 14.4241 17.8527 14.6161 17.8527 14.8125C17.8527 15.7143 17.5848 16.5089 17.0491 17.1964C17.058 18.4375 16.6786 19.4152 15.9107 20.1295C15.1429 20.8527 14.1295 21.2143 12.8705 21.2143C11.683 21.2143 10.2455 20.9063 8.55804 20.2902C7.09375 19.7634 6.09821 19.5 5.57143 19.5H1.71429C1.24107 19.5 0.834821 19.3348 0.495536 19.0045C0.165179 18.6652 0 18.2589 0 17.7857V9.21428C0 8.74107 0.165179 8.33929 0.495536 8.00893C0.834821 7.66964 1.24107 7.5 1.71429 7.5H5.57143C5.66071 7.5 5.75446 7.48214 5.85268 7.44643C5.95982 7.40178 6.06696 7.33928 6.17411 7.25893C6.28125 7.16964 6.37946 7.08929 6.46875 7.01786C6.56696 6.9375 6.67411 6.83482 6.79018 6.70982C6.91518 6.58482 7.00893 6.49107 7.07143 6.42857C7.13393 6.35714 7.21875 6.25893 7.32589 6.13393C7.43304 6.00893 7.49554 5.93303 7.51339 5.90625C8.09375 5.24553 8.54018 4.66964 8.85268 4.17857C8.96875 3.99107 9.11607 3.71429 9.29464 3.34821C9.47321 2.98214 9.63839 2.66071 9.79018 2.38393C9.94196 2.10714 10.1205 1.82589 10.3259 1.54018C10.5402 1.25446 10.7857 1.03571 11.0625 0.883927C11.3482 0.723213 11.6607 0.642856 12 0.642856C13.1161 0.642856 14.0357 0.941963 14.7589 1.54018C15.4911 2.13839 15.8571 2.98214 15.8571 4.07143C15.8571 4.67857 15.7589 5.25 15.5625 5.78571H20.5714C21.5 5.78571 22.3036 6.125 22.9821 6.80357C23.6607 7.48214 24 8.28125 24 9.20089Z"
+                        fill="#1C233A"/>
+                  </svg>
+
+                  <b>Innovation-First Approach </b> – Advanced machinery & customized solutions
+                </p>
+                <p className={'mb-3 d-flex gap-2'}>
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.17411 17.5312C3.34375 17.3616 3.42857 17.1607 3.42857 16.9286C3.42857 16.6964 3.34375 16.4955 3.17411 16.3259C3.00446 16.1562 2.80357 16.0714 2.57143 16.0714C2.33929 16.0714 2.13839 16.1562 1.96875 16.3259C1.79911 16.4955 1.71429 16.6964 1.71429 16.9286C1.71429 17.1607 1.79911 17.3616 1.96875 17.5312C2.13839 17.7009 2.33929 17.7857 2.57143 17.7857C2.80357 17.7857 3.00446 17.7009 3.17411 17.5312ZM22.2857 9.21428C22.2857 8.75893 22.1116 8.36161 21.7634 8.02232C21.4152 7.67411 21.0179 7.5 20.5714 7.5H12.8571C12.8571 7.32143 12.9241 7.10714 13.058 6.85714C13.192 6.59821 13.3393 6.35268 13.5 6.12053C13.6607 5.87946 13.808 5.57589 13.942 5.20982C14.0759 4.83482 14.1429 4.45536 14.1429 4.07143C14.1429 3.47321 13.942 3.04018 13.5402 2.77232C13.1473 2.49554 12.6339 2.35714 12 2.35714C11.7857 2.35714 11.3839 2.97768 10.7946 4.21875C10.5804 4.61161 10.4152 4.90178 10.2991 5.08928C9.94196 5.66071 9.44196 6.30803 8.79911 7.03125C8.16518 7.75446 7.71429 8.22768 7.44643 8.45089C6.83036 8.95982 6.20536 9.21428 5.57143 9.21428H5.14286V17.7857H5.57143C6.21429 17.7857 6.95982 17.9286 7.80804 18.2143C8.65625 18.5 9.51786 18.7857 10.3929 19.0714C11.2768 19.3571 12.0804 19.5 12.8036 19.5C14.4911 19.5 15.3348 18.7545 15.3348 17.2634C15.3348 17.0312 15.3125 16.7812 15.2679 16.5134C15.5357 16.3705 15.7455 16.1384 15.8973 15.817C16.058 15.4866 16.1384 15.1562 16.1384 14.8259C16.1384 14.4955 16.058 14.1875 15.8973 13.9018C16.3705 13.4554 16.6071 12.9241 16.6071 12.308C16.6071 12.0848 16.5625 11.8393 16.4732 11.5714C16.3839 11.2946 16.2723 11.0804 16.1384 10.9286H20.5714C21.0357 10.9286 21.4375 10.7589 21.7768 10.4196C22.1161 10.0804 22.2857 9.67857 22.2857 9.21428ZM24 9.20089C24 10.1384 23.6607 10.9464 22.9821 11.625C22.3125 12.3036 21.5089 12.6429 20.5714 12.6429H18.308C18.2723 13.1964 18.1071 13.7277 17.8125 14.2366C17.8393 14.4241 17.8527 14.6161 17.8527 14.8125C17.8527 15.7143 17.5848 16.5089 17.0491 17.1964C17.058 18.4375 16.6786 19.4152 15.9107 20.1295C15.1429 20.8527 14.1295 21.2143 12.8705 21.2143C11.683 21.2143 10.2455 20.9063 8.55804 20.2902C7.09375 19.7634 6.09821 19.5 5.57143 19.5H1.71429C1.24107 19.5 0.834821 19.3348 0.495536 19.0045C0.165179 18.6652 0 18.2589 0 17.7857V9.21428C0 8.74107 0.165179 8.33929 0.495536 8.00893C0.834821 7.66964 1.24107 7.5 1.71429 7.5H5.57143C5.66071 7.5 5.75446 7.48214 5.85268 7.44643C5.95982 7.40178 6.06696 7.33928 6.17411 7.25893C6.28125 7.16964 6.37946 7.08929 6.46875 7.01786C6.56696 6.9375 6.67411 6.83482 6.79018 6.70982C6.91518 6.58482 7.00893 6.49107 7.07143 6.42857C7.13393 6.35714 7.21875 6.25893 7.32589 6.13393C7.43304 6.00893 7.49554 5.93303 7.51339 5.90625C8.09375 5.24553 8.54018 4.66964 8.85268 4.17857C8.96875 3.99107 9.11607 3.71429 9.29464 3.34821C9.47321 2.98214 9.63839 2.66071 9.79018 2.38393C9.94196 2.10714 10.1205 1.82589 10.3259 1.54018C10.5402 1.25446 10.7857 1.03571 11.0625 0.883927C11.3482 0.723213 11.6607 0.642856 12 0.642856C13.1161 0.642856 14.0357 0.941963 14.7589 1.54018C15.4911 2.13839 15.8571 2.98214 15.8571 4.07143C15.8571 4.67857 15.7589 5.25 15.5625 5.78571H20.5714C21.5 5.78571 22.3036 6.125 22.9821 6.80357C23.6607 7.48214 24 8.28125 24 9.20089Z"
+                        fill="#1C233A"/>
+                  </svg>
+
+                  <b>Customer Commitment</b> – Personalized service with measurable satisfaction
+                </p>
+
+                <div className={'section-btn-div'}>
+                  <a href={'#'} className={'btn btn-default'}><span>Learn about Us</span></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={'project-section'}>
+        <div className={'container'}>
+          <div className={'title-div text-center mb-4'}>
+            <h3 className={'mb-3 wow animate__animated animate__fadeInDown'}>ThermWin Projects Showcase</h3>
+            <p className={' wow animate__animated animate__fadeInUp'}>With collaborations alongside top architects and developers, ThermWin delivers window solutions that blend aesthetics with innovation — tailored for each unique vision.</p>
+          </div>
+          <div className={'row'}>
+            <div className={'col-md-4 mb-3 wow animate__animated animate__fadeInUp'}>
+              <div className={'project-card position-relative mt-0 mt-sm-0 mt-md-5'}>
+                <div className={'project-img'}>
+                  <img
+                      className={'img-fluid'}
+                      src="/img/project1.jpg"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'project-content'}>
+                  <h4>Urban Villa Residence</h4>
+                  <p>Sleek and minimal windows designed to complement a contemporary villa. Delivered with precision-fit
+                    frames and sound-insulated glass.</p>
+                </div>
+              </div>
+            </div>
+            <div className={'col-md-4 mb-3 wow animate__animated animate__fadeInUp'}>
+              <div className={'project-card position-relative'}>
+                <div className={'project-img'}>
+                  <img
+                      className={'img-fluid'}
+                      src="/img/project2.jpg"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'project-content'}>
+                  <h4>Skyline Business Park</h4>
+                  <p>High-performance thermal insulation windows installed across 3 floors. Designed for energy efficiency and modern aesthetics.</p>
+                </div>
+              </div>
+            </div>
+            <div className={'col-md-4 mb-3 wow animate__animated animate__fadeInUp'}>
+              <div className={'project-card position-relative mt-0 mt-sm-0 mt-md-5'}>
+                <div className={'project-img'}>
+                  <img
+                      className={'img-fluid'}
+                      src="/img/project3.jpg"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'project-content'}>
+                  <h4>Harmony Heights Apartments</h4>
+                  <p>Smooth-sliding, low-maintenance window systems tailored for high-rise living. Installed with on-site measurement and client-approved finish.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={'section-btn-div text-center mt-3 wow animate__animated animate__fadeInUp'}>
+            <a href={'#'} className={'btn btn-default'}><span>View all projects</span></a>
+          </div>
+        </div>
+      </div>
+      <div className={'our-work-section'}>
+        <div className={'container'}>
+          <div className={'title-div text-center mb-4'}>
+            <h3 className={'mb-3 wow animate__animated animate__fadeInDown'}>Our Work Process</h3>
+            <p className={' wow animate__animated animate__fadeInUp'}>At ThermWin, we simplify your journey from initial idea to flawless installation. Our proven 4-step
+              process ensures precision, customization, and quality at every stage.</p>
+          </div>
+
+          <div className={'row'}>
+            <div className={'col-md-3 mb-3'}>
+              <div className={'work-card wow animate__animated animate__zoomIn'}>
+                <div className={'shape'}></div>
+                <h1 className={'text-end'}>1</h1>
+                <div className={'work-content'}>
+                  <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_68_359)">
+                      <path
+                          d="M26.211 0.3125L48.711 12.8125C49.9141 13.4844 50.3516 15.0078 49.6797 16.2109C49.0079 17.4141 47.4844 17.8516 46.2813 17.1797L25 5.35938L3.71098 17.1875C2.50785 17.8594 0.984416 17.4219 0.312541 16.2188C-0.359334 15.0156 0.0781657 13.4922 1.28129 12.8203L23.7891 0.3125C24.5469 -0.109375 25.461 -0.109375 26.2188 0.3125H26.211ZM25 12.5C25.8288 12.5 26.6237 12.8292 27.2097 13.4153C27.7958 14.0013 28.125 14.7962 28.125 15.625C28.125 16.4538 27.7958 17.2487 27.2097 17.8347C26.6237 18.4208 25.8288 18.75 25 18.75C24.1712 18.75 23.3764 18.4208 22.7903 17.8347C22.2043 17.2487 21.875 16.4538 21.875 15.625C21.875 14.7962 22.2043 14.0013 22.7903 13.4153C23.3764 12.8292 24.1712 12.5 25 12.5ZM11.25 20C12.0788 20 12.8737 20.3292 13.4597 20.9153C14.0458 21.5013 14.375 22.2962 14.375 23.125C14.375 23.9538 14.0458 24.7487 13.4597 25.3347C12.8737 25.9208 12.0788 26.25 11.25 26.25C10.4212 26.25 9.62638 25.9208 9.04033 25.3347C8.45428 24.7487 8.12504 23.9538 8.12504 23.125C8.12504 22.2962 8.45428 21.5013 9.04033 20.9153C9.62638 20.3292 10.4212 20 11.25 20ZM35.625 23.125C35.625 22.2962 35.9543 21.5013 36.5403 20.9153C37.1264 20.3292 37.9212 20 38.75 20C39.5788 20 40.3737 20.3292 40.9598 20.9153C41.5458 21.5013 41.875 22.2962 41.875 23.125C41.875 23.9538 41.5458 24.7487 40.9598 25.3347C40.3737 25.9208 39.5788 26.25 38.75 26.25C37.9212 26.25 37.1264 25.9208 36.5403 25.3347C35.9543 24.7487 35.625 23.9538 35.625 23.125ZM17.7266 38.3906L15.625 34.4922V37.5C15.625 38.8828 14.5079 40 13.125 40H9.37504C7.99223 40 6.87504 38.8828 6.87504 37.5V34.4922L4.77348 38.3906C4.28129 39.3047 3.14848 39.6406 2.23442 39.1562C1.32035 38.6719 0.984416 37.5312 1.46879 36.6172L4.42973 31.125C5.62504 28.8984 7.95317 27.5078 10.4844 27.5078H12.0079C13.2813 27.5078 14.5 27.8594 15.5547 28.4922L18.1797 23.625C19.375 21.3984 21.7032 20.0078 24.2344 20.0078H25.7579C28.2891 20.0078 30.6094 21.3984 31.8125 23.625L34.4375 28.4922C35.4922 27.8594 36.711 27.5078 37.9844 27.5078H39.5079C42.0391 27.5078 44.3594 28.8984 45.5625 31.125L48.5235 36.6172C49.0157 37.5312 48.6719 38.6641 47.7579 39.1562C46.8438 39.6484 45.711 39.3047 45.2188 38.3906L43.125 34.4922V37.5C43.125 38.8828 42.0079 40 40.625 40H36.875C35.4922 40 34.375 38.8828 34.375 37.5V34.4922L32.2735 38.3906C31.7813 39.3047 30.6485 39.6406 29.7344 39.1562C28.8204 38.6719 28.4844 37.5312 28.9688 36.6172L31.8047 31.3438C31.6719 31.2109 31.5547 31.0625 31.4688 30.8906L29.375 26.9922V31.25C29.375 32.6328 28.2579 33.75 26.875 33.75H23.125C21.7422 33.75 20.625 32.6328 20.625 31.25V26.9922L18.5235 30.8906C18.4297 31.0625 18.3204 31.2109 18.1875 31.3438L21.0235 36.6172C21.5157 37.5312 21.1719 38.6641 20.2579 39.1562C19.3438 39.6484 18.211 39.3047 17.7188 38.3906H17.7266Z"
+                          fill="white"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_68_359">
+                        <rect width="50" height="40" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <h4>Site Visit & Consultation</h4>
+                  <p>We begin with a detailed site inspection and client consultation to understand your requirements,
+                    style preferences, and space constraints.</p>
+                </div>
+              </div>
+            </div>
+            <div className={'col-md-3 mb-3'}>
+              <div className={'work-card wow animate__animated animate__zoomIn'}>
+                <div className={'shape'}></div>
+                <h1 className={'text-end'}>2</h1>
+                <div className={'work-content'}>
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_68_389)">
+                      <path
+                          d="M0.015625 36.6328C0.210938 38.5234 1.80469 40 3.75 40H11.25H36.25C38.3203 40 40 38.3203 40 36.25V28.75C40 26.6797 38.3203 25 36.25 25H32.5V31.25C32.5 31.9375 31.9375 32.5 31.25 32.5C30.5625 32.5 30 31.9375 30 31.25V25H25V31.25C25 31.9375 24.4375 32.5 23.75 32.5C23.0625 32.5 22.5 31.9375 22.5 31.25V25H17.5V31.25C17.5 31.9375 16.9375 32.5 16.25 32.5C15.5625 32.5 15 31.9375 15 31.25V25H8.75C8.0625 25 7.5 24.4375 7.5 23.75C7.5 23.0625 8.0625 22.5 8.75 22.5H15V17.5H8.75C8.0625 17.5 7.5 16.9375 7.5 16.25C7.5 15.5625 8.0625 15 8.75 15H15V10H8.75C8.0625 10 7.5 9.4375 7.5 8.75C7.5 8.0625 8.0625 7.5 8.75 7.5H15V3.75C15 1.67969 13.3203 0 11.25 0H3.75C1.67969 0 0 1.67969 0 3.75V28.75V36.25C0 36.3828 0.0078125 36.5078 0.015625 36.6328Z"
+                          fill="white"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_68_389">
+                        <rect width="40" height="40" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <h4>Measurement & Quotation</h4>
+                  <p>Using advanced laser tools, we take inch-perfect measurements and generate an instant,
+                    software-based quotation tailored to your project.</p>
+                </div>
+              </div>
+            </div>
+            <div className={'col-md-3 mb-3'}>
+              <div className={'work-card wow animate__animated animate__zoomIn'}>
+                <div className={'shape'}></div>
+                <h1 className={'text-end'}>3</h1>
+                <div className={'work-content'}>
+                  <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.60151 3.28926C4.83588 2.8127 5.35151 2.53926 5.87494 2.60957L24.9999 5.0002L44.1249 2.60957C44.6484 2.54707 45.164 2.82051 45.3984 3.28926L48.6562 9.80489C49.3593 11.2033 48.6093 12.8986 47.1093 13.3283L34.3437 16.9768C33.2578 17.2893 32.0937 16.8283 31.5156 15.8596L24.9999 5.0002L18.4843 15.8596C17.9062 16.8283 16.7421 17.2893 15.6562 16.9768L2.89838 13.3283C1.39057 12.8986 0.648382 11.2033 1.35151 9.80489L4.60151 3.28926ZM25.0859 10.0002L29.3749 17.1408C30.539 19.0783 32.8593 20.0002 35.039 19.3752L44.9999 16.5315V29.5783C44.9999 31.2971 43.8281 32.7971 42.1562 33.219L26.2109 37.2033C25.414 37.4064 24.5781 37.4064 23.789 37.2033L7.84369 33.219C6.17182 32.7893 4.99994 31.2893 4.99994 29.5705V16.5236L14.9687 19.3752C17.1406 20.0002 19.4687 19.0783 20.6328 17.1408L24.914 10.0002H25.0859Z"
+                        fill="white"/>
+                  </svg>
+
+                  <h4>Sample Kit & Customization</h4>
+                  <p>We provide a physical sample kit for material verification and finalize your custom specifications
+                    before moving to production.</p>
+                </div>
+              </div>
+            </div>
+            <div className={'col-md-3 mb-3'}>
+              <div className={'work-card wow animate__animated animate__zoomIn'}>
+                <div className={'shape'}></div>
+                <h1 className={'text-end'}>4</h1>
+                <div className={'work-content'}>
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_68_395)">
+                      <path
+                          d="M6.14064 0.390588C5.39845 -0.187537 4.34377 -0.117225 3.67189 0.546838L0.546892 3.67184C-0.117171 4.3359 -0.187483 5.39059 0.382829 6.14059L6.63283 14.2656C6.98439 14.7265 7.53908 15 8.1172 15H12.3438L20.8594 23.5156C19.711 25.7812 20.0781 28.625 21.9766 30.5156L30.7266 39.2656C31.7031 40.2421 33.2891 40.2421 34.2656 39.2656L39.2656 34.2656C40.2422 33.289 40.2422 31.7031 39.2656 30.7265L30.5156 21.9765C28.625 20.0859 25.7813 19.7109 23.5156 20.8593L15 12.3437V8.11715C15 7.53121 14.7266 6.98434 14.2656 6.63278L6.14064 0.390588ZM1.5547 30.9453C0.562517 31.9375 1.66344e-05 33.289 1.66344e-05 34.6953C1.66344e-05 37.625 2.37502 40 5.3047 40C6.71095 40 8.06252 39.4375 9.0547 38.4453L18.2578 29.2421C17.6485 27.6093 17.5547 25.8359 17.9766 24.1562L13.1563 19.3359L1.5547 30.9453ZM40 11.25C40 10.4297 39.9141 9.63278 39.75 8.86715C39.5625 7.99215 38.4922 7.76559 37.8594 8.3984L32.8672 13.3906C32.6328 13.625 32.3125 13.7578 31.9844 13.7578L27.5 13.75C26.8125 13.75 26.25 13.1875 26.25 12.5V8.01559C26.25 7.68746 26.3828 7.36715 26.6172 7.13278L31.6094 2.14059C32.2422 1.50778 32.0156 0.437463 31.1406 0.249963C30.3672 0.0859001 29.5703 -3.7411e-05 28.75 -3.7411e-05C22.5391 -3.7411e-05 17.5 5.03903 17.5 11.25V11.3125L24.1641 17.9765C26.9766 17.2656 30.086 18.0156 32.2891 20.2187L33.5156 21.4453C37.3438 19.6484 40 15.7578 40 11.25ZM4.37502 33.75C4.37502 33.2527 4.57256 32.7758 4.92419 32.4241C5.27582 32.0725 5.75274 31.875 6.25002 31.875C6.7473 31.875 7.22421 32.0725 7.57584 32.4241C7.92747 32.7758 8.12502 33.2527 8.12502 33.75C8.12502 34.2472 7.92747 34.7242 7.57584 35.0758C7.22421 35.4274 6.7473 35.625 6.25002 35.625C5.75274 35.625 5.27582 35.4274 4.92419 35.0758C4.57256 34.7242 4.37502 34.2472 4.37502 33.75Z"
+                          fill="white"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_68_395">
+                        <rect width="40" height="40" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <h4>Manufacturing & Installation</h4>
+                  <p>Your windows are manufactured with high-precision machinery and installed by our expert team —
+                    backed by a 10-year guarantee.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div className={'client-say-section'}>
+        <div className={'container-fluid'}>
+          <div className={'title-div text-center mb-4'}>
+            <h3 className={'mb-3 wow animate__animated animate__fadeInDown'}>What Our Clients Say</h3>
+            <p className={' wow animate__animated animate__fadeInUp'}>“The energy-efficient windows transformed our home’s comfort and style. The 10-year guarantee gave us total peace of mind. Great service and excellent craftsmanship.”</p>
+          </div>
+          <div className={'row'}>
+            <div className={'col-md-4'}>
+              <div className={'client-say position-relative'}>
+                <p className={'mb-3'}>“Exceptional quality and flawless installation! ThermWin’s team made the entire
+                  process smooth — from precise measurement to the final fit. Highly recommend for any architectural
+                  project.”</p>
+                <div className={'cs-bt pe-5'}>
+                  <div className={'rate mb-2'}>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                  </div>
+                  <h6>Sneha Kapoor, Homeowner, Noida</h6>
+                </div>
+
+                <div className={'quote-icon'}>
+                  <svg width="60" height="45" viewBox="0 0 60 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.9575 0L24.9575 18.4775C24.9575 32.7375 15.63 42.4025 2.5 45L0.0125 39.6225C6.0925 37.33 10 30.5275 10 25H0L0 0L24.9575 0ZM60 0V18.4775C60 32.7375 50.63 42.405 37.5 45L35.01 39.6225C41.0925 37.33 45 30.5275 45 25L35.0425 25V0L60 0Z"
+                        fill="#1C233A"/>
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+            <div className={'col-md-4'}>
+              <div className={'client-say position-relative'}>
+                <p className={'mb-3'}>“Exceptional quality and flawless installation! ThermWin’s team made the entire process smooth — from precise measurement to the final fit. Highly recommend for any architectural project.”</p>
+                <div className={'cs-bt pe-5'}>
+                  <div className={'rate mb-2'}>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                  </div>
+                  <h6>Arjun Mehta, Architect, Mumbai</h6>
+                </div>
+
+                <div className={'quote-icon'}>
+                  <svg width="60" height="45" viewBox="0 0 60 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.9575 0L24.9575 18.4775C24.9575 32.7375 15.63 42.4025 2.5 45L0.0125 39.6225C6.0925 37.33 10 30.5275 10 25H0L0 0L24.9575 0ZM60 0V18.4775C60 32.7375 50.63 42.405 37.5 45L35.01 39.6225C41.0925 37.33 45 30.5275 45 25L35.0425 25V0L60 0Z"
+                        fill="#1C233A"/>
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+            <div className={'col-md-4'}>
+              <div className={'client-say position-relative'}>
+                <p className={'mb-3'}>“ThermWin’s customized solutions matched our design vision, delivering style and function. Their consultation and on-site quoting saved us time and hassle, making the experience seamless and professional.”</p>
+                <div className={'cs-bt pe-5'}>
+                  <div className={'rate mb-2'}>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M8.87046 0.562437C8.70987 0.218726 8.37051 0 7.99782 0C7.62514 0 7.28881 0.218726 7.12519 0.562437L5.17691 4.69635L0.825864 5.35878C0.462267 5.41502 0.159269 5.67749 0.04716 6.03682C-0.0649493 6.39616 0.02595 6.79299 0.286528 7.05858L3.44377 10.2801L2.69839 14.8327C2.63779 15.2077 2.78929 15.5889 3.08926 15.8107C3.38923 16.0326 3.78615 16.0607 4.11339 15.8826L8.00085 13.7422L11.8883 15.8826C12.2156 16.0607 12.6125 16.0357 12.9124 15.8107C13.2124 15.5858 13.3639 15.2077 13.3033 14.8327L12.5549 10.2801L15.7121 7.05858C15.9727 6.79299 16.0667 6.39616 15.9515 6.03682C15.8364 5.67749 15.5364 5.41502 15.1728 5.35878L10.8187 4.69635L8.87046 0.562437Z"
+                          fill="#3A6351"/>
+                    </svg>
+                  </div>
+                  <h6>Rahul Singh, Project Manager, Bangalore</h6>
+                </div>
+
+                <div className={'quote-icon'}>
+                  <svg width="60" height="45" viewBox="0 0 60 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.9575 0L24.9575 18.4775C24.9575 32.7375 15.63 42.4025 2.5 45L0.0125 39.6225C6.0925 37.33 10 30.5275 10 25H0L0 0L24.9575 0ZM60 0V18.4775C60 32.7375 50.63 42.405 37.5 45L35.01 39.6225C41.0925 37.33 45 30.5275 45 25L35.0425 25V0L60 0Z"
+                        fill="#1C233A"/>
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
