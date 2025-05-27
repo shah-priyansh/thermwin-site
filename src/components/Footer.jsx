@@ -1,7 +1,5 @@
 "use client";
 
-import {useState} from "react";
-import {useAuth} from "@/context/AuthContext";
 
 export default function Footer() {
 
@@ -89,7 +87,7 @@ export default function Footer() {
                             <div className={'footer-box'}>
                                 <h4>Location</h4>
                                 <div className={'footer-link mb-4'}>
-                                    <p>Plot No. 25, Industrial Estate, Sector 63, Noida – 201301, Uttar Pradesh, India</p>
+                                    <p>Plot No. 25, Industrial Estate,Sector 63, Noida – 201301,Uttar Pradesh, India</p>
                                 </div>
                                 <div className={'footer-logo text-end'}>
                                     <img
