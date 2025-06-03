@@ -1,30 +1,86 @@
 "use client"
+import Carousel from 'react-bootstrap/Carousel';
 
 export default function Home() {
   return (
     <div className={'main-content'}>
-      <div className={'slider-div position-relative'}>
-        <div className={'banner-img'}>
-          <img
-              className={'img-fluid'}
-              src="/img/banner.png"
-              alt="img" width={'100%'}/>
-        </div>
-        <div className={'banner-content wow animate__animated animate__fadeInLeft'}>
-          <h1>
-            Precision Aluminums System Windows,<br/>
-            Built for Performance & Elegance
-          </h1>
-          <a href={'#'} className={'btn btn-default'}>
-            <span>get a free quotation</span>
-          </a>
-        </div>
+
+      <div className={'home-slider'}>
+        <Carousel>
+          <Carousel.Item>
+            <Carousel.Caption>
+              <div className={'slider-div position-relative'}>
+                <div className={'banner-img'}>
+                  <img
+                      className={'img-fluid'}
+                      src="/img/banner.png"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'banner-content wow animate__animated animate__fadeInLeft'}>
+                  <h1>
+                    Precision Aluminums System Windows,<br/>
+                    Built for Performance & Elegance
+                  </h1>
+                  <a href={'#'} className={'btn btn-default'}>
+                    <span>get a free quotation</span>
+                  </a>
+                </div>
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Carousel.Caption>
+              <div className={'slider-div position-relative'}>
+                <div className={'banner-img'}>
+                  <img
+                      className={'img-fluid'}
+                      src="/img/banner.png"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'banner-content wow animate__animated animate__fadeInLeft'}>
+                  <h1>
+                    Precision Aluminums System Windows,<br/>
+                    Built for Performance & Elegance
+                  </h1>
+                  <a href={'#'} className={'btn btn-default'}>
+                    <span>get a free quotation</span>
+                  </a>
+                </div>
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Carousel.Caption>
+              <div className={'slider-div position-relative'}>
+                <div className={'banner-img'}>
+                  <img
+                      className={'img-fluid'}
+                      src="/img/banner.png"
+                      alt="img" width={'100%'}/>
+                </div>
+                <div className={'banner-content wow animate__animated animate__fadeInLeft'}>
+                  <h1>
+                    Precision Aluminums System Windows,<br/>
+                    Built for Performance & Elegance
+                  </h1>
+                  <a href={'#'} className={'btn btn-default'}>
+                    <span>get a free quotation</span>
+                  </a>
+                </div>
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
+
+
+
       <div className={'client-div py-5'}>
         <div className={'container'}>
           <div className={'row'}>
             <div className={'col-md-12'}>
-              <p className={'text-center text-primary client-title mb-4 wow animate__animated animate__fadeInDown'}>We’ve worked on 500+ projects with 100+ global clients</p>
+              <p className={'text-center text-primary client-title mb-4 wow animate__animated animate__fadeInDown'}>We’ve
+                worked on 500+ projects with 100+ global clients</p>
               <div className={'client-list'}>
                 <div className={'client-box'}>
                   <img
@@ -68,7 +124,7 @@ export default function Home() {
           <div className={'row'}>
             <div className={'col-md-12'}>
               <div className={'title-div text-center mb-4'}>
-                <h3 className={'mb-3 wow animate__animated animate__fadeInDown'}>Explore Aluminums Window Systems</h3>
+                <h3 className={'mb-3 wow animate__animated animate__fadeInDown uni-bold'}>Explore Aluminums Window Systems</h3>
                 <p className={' wow animate__animated animate__fadeInUp'}>From sleek sliding panels to high-performance thermal break systems, ThermWin offers a complete range
                   of aluminium windows designed for style, strength, and sustainability.</p>
               </div>
@@ -432,7 +488,7 @@ export default function Home() {
           </div>
           <div className={'row'}>
             <div className={'col-md-4'}>
-              <div className={'client-say position-relative'}>
+              <div className={'client-say position-relative wow animate__animated animate__zoomIn'}>
                 <p className={'mb-3'}>“Exceptional quality and flawless installation! ThermWin’s team made the entire
                   process smooth — from precise measurement to the final fit. Highly recommend for any architectural
                   project.”</p>
@@ -478,7 +534,7 @@ export default function Home() {
               </div>
             </div>
             <div className={'col-md-4'}>
-              <div className={'client-say position-relative'}>
+              <div className={'client-say position-relative wow animate__animated animate__zoomIn'}>
                 <p className={'mb-3'}>“Exceptional quality and flawless installation! ThermWin’s team made the entire process smooth — from precise measurement to the final fit. Highly recommend for any architectural project.”</p>
                 <div className={'cs-bt pe-5'}>
                   <div className={'rate mb-2'}>
@@ -522,7 +578,7 @@ export default function Home() {
               </div>
             </div>
             <div className={'col-md-4'}>
-              <div className={'client-say position-relative'}>
+              <div className={'client-say position-relative wow animate__animated animate__zoomIn'}>
                 <p className={'mb-3'}>“ThermWin’s customized solutions matched our design vision, delivering style and function. Their consultation and on-site quoting saved us time and hassle, making the experience seamless and professional.”</p>
                 <div className={'cs-bt pe-5'}>
                   <div className={'rate mb-2'}>

@@ -21,7 +21,8 @@ export default function Location() {
                 <div className={'container'}>
                     <div className={'row'}>
                         <div className={'col-md-6'}>
-                            <div className={'about-content wow animate__animated animate__fadeInLeft'}>
+                            <div className={'about-content'}>
+                                <div className={'wow animate__animated animate__fadeInLeft'}>
                                 <p className={'mb-3'}>Founded in 2023, ThermWin System Windows began with a single order
                                     and
                                     a clear vision—to redefine aluminium system windows in India. In just 1.5 years,
@@ -34,9 +35,10 @@ export default function Location() {
                                 <p className={'mb-3'}>We’re more than manufacturers—we are partners in design,
                                     performance,
                                     and longevity.</p>
+                                </div>
                                 <div className={'row'}>
                                     <div className={'col-md-6'}>
-                                        <div className={'mission-box mb-3'}>
+                                        <div className={'mission-box wow animate__animated animate__fadeInUp mb-3'}>
                                             <h5>Mission</h5>
                                             <p>To deliver state-of-the-art aluminium window systems that elevate
                                                 architectural
@@ -44,7 +46,7 @@ export default function Location() {
                                         </div>
                                     </div>
                                     <div className={'col-md-6'}>
-                                        <div className={'mission-box mb-3'}>
+                                        <div className={'mission-box wow animate__animated animate__fadeInUp mb-3'}>
                                         <h5>Vision</h5>
                                         <p>To become the most trusted and innovative aluminium system windows provider
                                             across India, delivering guaranteed quality and tailored service to every

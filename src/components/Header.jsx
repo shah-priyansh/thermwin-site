@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+
 // import {useEffect, useState} from "react";
 // import ApiService from "@/services/api.service";
 // import {Dropdown, Fade, Form, FormControl} from "react-bootstrap";
@@ -70,8 +71,8 @@ export default function Header() {
                                     Products 1
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="/about">Projects</Nav.Link>
-                            <Nav.Link href="/contact">Career</Nav.Link>
+                            <Nav.Link href="/project">Projects</Nav.Link>
+                            <Nav.Link href="/career">Career</Nav.Link>
                             <Nav.Link href="/contact">contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
