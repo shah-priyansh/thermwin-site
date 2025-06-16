@@ -6,12 +6,12 @@ export default function Location() {
                 <div className={'page-banner-img wow animate__animated animate__fadeIn'}>
                     <img
                         className={'img-fluid'}
-                        src="/img/lusso-series.jpg"
+                        src="/img/vrun-banner.jpg"
                         alt="logo"/>
                 </div>
                 <div className={'page-content text-center wow animate__animated animate__fadeInUp'}>
                     <div className={'container'}>
-                        <h3><span>Lusso Series</span></h3>
+                        <h3><span>V Ran Series</span></h3>
                     </div>
                 </div>
             </div>
@@ -24,20 +24,16 @@ export default function Location() {
                             <div className={'wow animate__animated animate__fadeInUp'}>
                                 <h3>Elevate Style with Strength</h3>
                                 <p>
-                                    The Lusso Series profile designed & developed by ThermWin. It matches aesthetics of
-                                    any form of architecture. The profile is designed with optimal insulation
-                                    performance. We value the significance of energy conservation and hence it is the
-                                    fundamental prerequisite in Tel.., new generation of energy efficient designs.
+                                    The V-Ran Series, being the first model in the series is specially created
+                                    to meet your design requirements. Our research & development team
+                                    ensures to utilize state of the art technology to make the product
+                                    capable to bear the harshest weather conditions.
                                 </p>
-                                <p>
-                                    The Lusso Series by ThermWin is crafted for those who demand elegance, performance,
-                                    and seamless operation. Engineered for high-end residential and commercial spaces,
-                                    it combines minimalist aesthetics with superior insulation and durability.
-                                </p>
+
                                 <div className={'series-img my-5'}>
                                     <img
                                         className={'img-fluid'}
-                                        src="/img/lusso.jpg"
+                                        src="/img/vran.png"
                                         alt="img"/>
                                 </div>
                             </div>
@@ -55,7 +51,7 @@ export default function Location() {
                                         <tbody>
                                         <tr>
                                             <td>Window Height</td>
-                                            <td>2600mm to 2900mm</td>
+                                            <td>1900mm to 2100mm</td>
                                         </tr>
                                         <tr>
                                             <td>Interlocking Face Width</td>
@@ -63,11 +59,22 @@ export default function Location() {
                                         </tr>
                                         <tr>
                                             <td>Track Options</td>
-                                            <td>2 Track, 3 Track</td>
+                                            <td>2 Track & 3 Track</td>
                                         </tr>
                                         <tr>
-                                            <td>Corner Joints</td>
-                                            <td>45° (Track & Sash)</td>
+                                            <td colSpan={2}>Corner Joints</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div className={'ps-2'}>- Track Joint</div>
+                                            </td>
+                                            <td>45degree</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div className={'ps-2'}>- Sash Joint</div>
+                                            </td>
+                                            <td>45degree</td>
                                         </tr>
                                         <tr>
                                             <td>Glass Range</td>
@@ -75,7 +82,7 @@ export default function Location() {
                                         </tr>
                                         <tr>
                                             <td>Roller Weight Capacity</td>
-                                            <td>150kg / Sash</td>
+                                            <td>65kg / Sash</td>
                                         </tr>
                                         <tr>
                                             <td>Locking System</td>
@@ -89,7 +96,8 @@ export default function Location() {
                                     </table>
                                 </div>
                             </div>
-                            <div className={'start-project pt-0 pt-sm-0 pt-md-5 mb-5 wow animate__animated animate__fadeInUp'}>
+                            <div
+                                className={'start-project pt-0 pt-sm-0 pt-md-5 mb-5 wow animate__animated animate__fadeInUp'}>
                                 <h3>Ready to Start Your Project?</h3>
                                 <p>
                                     Let’s turn your vision into precision-engineered reality. Whether you're designing a

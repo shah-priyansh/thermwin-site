@@ -1086,6 +1086,11 @@ a {
     }
   }
 }
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: var(--primary);
+}
+
 @media (width >= 992px) {
   .container, .container-lg, .container-md, .container-sm {
     max-width: 100%;

@@ -6,12 +6,12 @@ export default function Location() {
                 <div className={'page-banner-img wow animate__animated animate__fadeIn'}>
                     <img
                         className={'img-fluid'}
-                        src="/img/lusso-series.jpg"
+                        src="/img/orun-banner.jpg"
                         alt="logo"/>
                 </div>
                 <div className={'page-content text-center wow animate__animated animate__fadeInUp'}>
                     <div className={'container'}>
-                        <h3><span>Lusso Series</span></h3>
+                        <h3><span>O Ran Series</span></h3>
                     </div>
                 </div>
             </div>
@@ -24,20 +24,17 @@ export default function Location() {
                             <div className={'wow animate__animated animate__fadeInUp'}>
                                 <h3>Elevate Style with Strength</h3>
                                 <p>
-                                    The Lusso Series profile designed & developed by ThermWin. It matches aesthetics of
-                                    any form of architecture. The profile is designed with optimal insulation
-                                    performance. We value the significance of energy conservation and hence it is the
-                                    fundamental prerequisite in Tel.., new generation of energy efficient designs.
+                                    The O-Ran Series profile designed & developed by ThermWin offers
+                                    choice of finishes to ensure it matches the aesthetics of any form of
+                                    architecture. We value the significance of energy conservation & hence it
+                                    is the fundamental prerequisite in ThermWin new generation of energy
+                                    efficient designs.
                                 </p>
-                                <p>
-                                    The Lusso Series by ThermWin is crafted for those who demand elegance, performance,
-                                    and seamless operation. Engineered for high-end residential and commercial spaces,
-                                    it combines minimalist aesthetics with superior insulation and durability.
-                                </p>
+
                                 <div className={'series-img my-5'}>
                                     <img
                                         className={'img-fluid'}
-                                        src="/img/lusso.jpg"
+                                        src="/img/orun.png"
                                         alt="img"/>
                                 </div>
                             </div>
@@ -55,27 +52,38 @@ export default function Location() {
                                         <tbody>
                                         <tr>
                                             <td>Window Height</td>
-                                            <td>2600mm to 2900mm</td>
+                                            <td>2200mm to 2400mm</td>
                                         </tr>
                                         <tr>
                                             <td>Interlocking Face Width</td>
-                                            <td>22mm</td>
+                                            <td>20mm</td>
                                         </tr>
                                         <tr>
                                             <td>Track Options</td>
-                                            <td>2 Track, 3 Track</td>
+                                            <td>2 Track, 3 Track & 4 Track</td>
                                         </tr>
                                         <tr>
-                                            <td>Corner Joints</td>
-                                            <td>45° (Track & Sash)</td>
+                                            <td colSpan={2}>Corner Joints</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div className={'ps-2'}>- Track Joint</div>
+                                            </td>
+                                            <td>45degree</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div className={'ps-2'}>- Sash Joint</div>
+                                            </td>
+                                            <td>45degree</td>
                                         </tr>
                                         <tr>
                                             <td>Glass Range</td>
-                                            <td>4mm to 6mm</td>
+                                            <td>4mm to 8mm</td>
                                         </tr>
                                         <tr>
                                             <td>Roller Weight Capacity</td>
-                                            <td>150kg / Sash</td>
+                                            <td>90kg / Sash</td>
                                         </tr>
                                         <tr>
                                             <td>Locking System</td>
@@ -89,7 +97,8 @@ export default function Location() {
                                     </table>
                                 </div>
                             </div>
-                            <div className={'start-project pt-0 pt-sm-0 pt-md-5 mb-5 wow animate__animated animate__fadeInUp'}>
+                            <div
+                                className={'start-project pt-0 pt-sm-0 pt-md-5 mb-5 wow animate__animated animate__fadeInUp'}>
                                 <h3>Ready to Start Your Project?</h3>
                                 <p>
                                     Let’s turn your vision into precision-engineered reality. Whether you're designing a

@@ -6,103 +6,110 @@ export default function Location() {
                 <div className={'page-banner-img wow animate__animated animate__fadeIn'}>
                     <img
                         className={'img-fluid'}
-                        src="/img/lusso-series.jpg"
+                        src="/img/aero-banner.jpg"
                         alt="logo"/>
                 </div>
                 <div className={'page-content text-center wow animate__animated animate__fadeInUp'}>
                     <div className={'container'}>
-                        <h3><span>Lusso Series</span></h3>
+                        <h3><span>Aero View Series</span></h3>
                     </div>
                 </div>
             </div>
+
 
             <div className={'series-detail-div'}>
                 <div className={'container'}>
                     <div className={'row'}>
                         <div className={'col-md-8'}>
-                        <div className={'series-content'}>
-                            <div className={'wow animate__animated animate__fadeInUp'}>
-                                <h3>Elevate Style with Strength</h3>
-                                <p>
-                                    The Lusso Series profile designed & developed by ThermWin. It matches aesthetics of
-                                    any form of architecture. The profile is designed with optimal insulation
-                                    performance. We value the significance of energy conservation and hence it is the
-                                    fundamental prerequisite in Tel.., new generation of energy efficient designs.
-                                </p>
-                                <p>
-                                    The Lusso Series by ThermWin is crafted for those who demand elegance, performance,
-                                    and seamless operation. Engineered for high-end residential and commercial spaces,
-                                    it combines minimalist aesthetics with superior insulation and durability.
-                                </p>
-                                <div className={'series-img my-5'}>
-                                    <img
-                                        className={'img-fluid'}
-                                        src="/img/lusso.jpg"
-                                        alt="img"/>
-                                </div>
-                            </div>
+                            <div className={'series-content'}>
+                                <div className={'wow animate__animated animate__fadeInUp'}>
+                                    <h3>Elevate Style with Strength</h3>
+                                    <p>
+                                        The Aero View Series profile designed & developed by ThermWin offers
+                                        choice of finishes to ensure it matches the aesthetics of any form of
+                                        architecture. We value the significance of energy conservation & hence it
+                                        is the fundamental prerequisite in ThermWin new generation of energy
+                                        efficient designs.
+                                    </p>
 
-                            <div className={'specification mb-5 wow animate__animated animate__fadeInUp'}>
-                                <h3 className={'mb-4'}>Technical Specifications</h3>
-                                <div className={'spe-table'}>
-                                    <table className={'table table-striped'}>
-                                        <thead>
-                                        <tr>
-                                            <th>Attribute</th>
-                                            <th>Value</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>Window Height</td>
-                                            <td>2600mm to 2900mm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Interlocking Face Width</td>
-                                            <td>22mm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Track Options</td>
-                                            <td>2 Track, 3 Track</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Corner Joints</td>
-                                            <td>45° (Track & Sash)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Glass Range</td>
-                                            <td>4mm to 6mm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Roller Weight Capacity</td>
-                                            <td>150kg / Sash</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Locking System</td>
-                                            <td>Single Point & Multipoint</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Mosquito Net</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                    <div className={'series-img my-5'}>
+                                        <img
+                                            className={'img-fluid'}
+                                            src="/img/aero.jpg"
+                                            alt="img"/>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className={'start-project pt-0 pt-sm-0 pt-md-5 mb-5 wow animate__animated animate__fadeInUp'}>
-                                <h3>Ready to Start Your Project?</h3>
-                                <p>
-                                    Let’s turn your vision into precision-engineered reality. Whether you're designing a
-                                    home, office, or high-rise, ThermWin System Windows is here to deliver quality you
-                                    can trust.
-                                </p>
 
-                                <a href={'#'} className={'btn btn-default'}>
-                                    <span className={'py-3'}>Request a Custom Quote</span>
-                                </a>
+                                <div className={'specification mb-5 wow animate__animated animate__fadeInUp'}>
+                                    <h3 className={'mb-4'}>Technical Characteristics</h3>
+                                    <div className={'spe-table'}>
+                                        <table className={'table table-striped'}>
+                                            <thead>
+                                            <tr>
+                                                <th>Attribute</th>
+                                                <th>Value</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Window Height</td>
+                                                <td>3660mm Max</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frame Depth Options</td>
+                                                <td>50mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fix Sight Line</td>
+                                                <td>50mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td colSpan={2}>Corner Joints</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div className={'ps-2'}>- Track Joint</div>
+                                                </td>
+                                                <td>45degree</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div className={'ps-2'}>- Sash Joint</div>
+                                                </td>
+                                                <td>45degree</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Glass Range</td>
+                                                <td>5mm to 24mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hinge Options</td>
+                                                <td>- Friction stay : up to 50 kg<br/>
+                                                    - Butt Hings : up to 300 kg
+                                                </td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div
+                                    className={'start-project pt-0 pt-sm-0 pt-md-5 mb-5 wow animate__animated animate__fadeInUp'}>
+                                    <h3>Ready to Start Your Project?</h3>
+                                    <p>
+                                        Let’s turn your vision into precision-engineered reality. Whether you're
+                                        designing a
+                                        home, office, or high-rise, ThermWin System Windows is here to deliver quality
+                                        you
+                                        can trust.
+                                    </p>
+
+                                    <a href={'#'} className={'btn btn-default'}>
+                                        <span className={'py-3'}>Request a Custom Quote</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <div className={'col-md-4'}>
                             <div className={'series-right-div wow animate__animated animate__fadeInRight'}>
                                 <div className={'sr-title'}>
@@ -169,7 +176,6 @@ export default function Location() {
                     </div>
                 </div>
             </div>
-
 
         </div>
 

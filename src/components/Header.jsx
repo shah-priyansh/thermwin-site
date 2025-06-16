@@ -67,8 +67,36 @@ export default function Header() {
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/about">About</Nav.Link>
                             <NavDropdown title="Products" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item href={`/`}>
-                                    Products 1
+                                <NavDropdown.Item href={`/vran-series`}>
+                                    V Ran Series
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href={`/oran-series`}>
+                                    O Ran Series
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href={`/uran-series`}>
+                                    U Ran Series
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href={`/lusso-series`}>
+                                    Lusso Series
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href={`/eline-series`}>
+                                    E Line Series
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href={`/arch`}>
+                                    Arch View Series
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href={`/aero`}>
+                                    Aero View Series
+                                </NavDropdown.Item>
+
+                                <NavDropdown.Item href={`/thermwin-rin`}>
+                                    Thermwin Rin Series
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href={`/thermwin-minimal`}>
+                                    Thermwin Minimal Series
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href={`/thermwin-aero`}>
+                                    Thermwin Aero Series
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="/project">Projects</Nav.Link>
