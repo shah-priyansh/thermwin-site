@@ -8,10 +8,10 @@ export default function Footer() {
             <div className={'top-footer overflow-hidden'}>
                 <div className={'row'}>
                     <div className={'col-6'}>
-                        <a className={'text-primary'} href={'#'}>See Our Installations</a>
+                        <a className={'text-primary'} href={'/project'}>See Our Installations</a>
                     </div>
                     <div className={'col-6'}>
-                        <a className={'bg-primary text-white'} href={'#'}>Request a Free Quote</a>
+                        <a className={'bg-primary text-white'} href={'/contact'}>Request a Free Quote</a>
                     </div>
                 </div>
             </div>
@@ -22,12 +22,12 @@ export default function Footer() {
                             <div className={'footer-box'}>
                                 <h4>Product</h4>
                                 <div className={'footer-link mb-4'}>
-                                    <a href={'#'}>Sliding System</a>
-                                    <a href={'#'}>Openable System</a>
-                                    <a href={'#'}>Thermal System</a>
+                                    <a href={'/vran-series'}>Sliding System</a>
+                                    <a href={'/arch'}>Openable System</a>
+                                    <a href={'/thermwin-rin'}>Thermal System</a>
                                 </div>
                                 <div className={'section-btn-div'}>
-                                    <a href={'#'} className={'btn btn-default'}><span>Download Brochure</span></a>
+                                    <a href={'/img/thermwin.pdf'} target={'_blank'} className={'btn btn-default'} download><span>Download Brochure</span></a>
                                 </div>
                             </div>
                         </div>
@@ -35,11 +35,11 @@ export default function Footer() {
                             <div className={'footer-box'}>
                                 <h4>Navigation</h4>
                                 <div className={'footer-link mb-4'}>
-                                    <a href={'#'}> Home</a>
-                                    <a href={'#'}> About Us</a>
-                                    <a href={'#'}> Our Projects</a>
-                                    <a href={'#'}> Career</a>
-                                    <a href={'#'}> Contact Us</a>
+                                    <a href={'/'}> Home</a>
+                                    <a href={'/about'}> About Us</a>
+                                    <a href={'/project'}> Our Projects</a>
+                                    <a href={'/career'}> Career</a>
+                                    <a href={'/contact'}> Contact Us</a>
                                     <a href={'#'}> Privacy Policy</a>
                                     <a href={'#'}> Cookies Policy</a>
                                 </div>
@@ -55,7 +55,7 @@ export default function Footer() {
                                 </div>
                                 <div className={'header-social pt-5'}>
 
-                                    <a href={'#'}>
+                                    <a href={'#'} target={'_blank'}>
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -63,7 +63,7 @@ export default function Footer() {
                                                 fill="#1C233A"/>
                                         </svg>
                                     </a>
-                                    <a href={'#'}>
+                                    <a href={'#'} target={'_blank'}>
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -71,7 +71,7 @@ export default function Footer() {
                                                 fill="#1C233A"/>
                                         </svg>
                                     </a>
-                                    <a href={'#'}>
+                                    <a href={'#'} target={'_blank'}>
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path

@@ -21,7 +21,7 @@ export default function Home() {
                     Precision Aluminums System Windows,<br/>
                     Built for Performance & Elegance
                   </h1>
-                  <a href={'#'} className={'btn btn-default'}>
+                  <a href={'/contact'} className={'btn btn-default'}>
                     <span>get a free quotation</span>
                   </a>
                 </div>
@@ -42,7 +42,7 @@ export default function Home() {
                     Precision Aluminums System Windows,<br/>
                     Built for Performance & Elegance
                   </h1>
-                  <a href={'#'} className={'btn btn-default'}>
+                  <a href={'/contact'} className={'btn btn-default'}>
                     <span>get a free quotation</span>
                   </a>
                 </div>
@@ -63,7 +63,7 @@ export default function Home() {
                     Precision Aluminums System Windows,<br/>
                     Built for Performance & Elegance
                   </h1>
-                  <a href={'#'} className={'btn btn-default'}>
+                  <a href={'/contact'} className={'btn btn-default'}>
                     <span>get a free quotation</span>
                   </a>
                 </div>
@@ -164,8 +164,8 @@ export default function Home() {
                       accessibility and airflow matter most.
                     </p>
                     <div className={'tag-list'}>
-                      <label>Aeroview Series</label>
-                      <label>Archview Series</label>
+                      <label><a href={'/aero'}>Aeroview Series</a> </label>
+                      <label><a href={'/arch'}>Archview Series</a> </label>
                     </div>
                   </div>
                 </div>
@@ -194,11 +194,11 @@ export default function Home() {
                       resistance, and clean architectural lines.
                     </p>
                     <div className={'tag-list'}>
-                      <label>V Ran Series</label>
-                      <label>O Ran Series</label>
-                      <label>U Ran Series</label>
-                      <label>Lusso Series</label>
-                      <label>E Line Series</label>
+                      <label><a href={'/vran-series'}> V Ran Series</a></label>
+                      <label><a href={'/oran-series'}> O Ran Series</a></label>
+                      <label><a href={'/uran-series'}> U Ran Series</a></label>
+                      <label><a href={'/lusso-series'}> Lusso Series</a></label>
+                      <label><a href={'/eline-series'}> E Line Series</a></label>
                     </div>
                   </div>
                   <div className={'explore-img'}>
@@ -239,9 +239,9 @@ export default function Home() {
                       Ideal for eco-conscious and high-performance projects.
                     </p>
                     <div className={'tag-list'}>
-                      <label>Thermwin Rin Series</label>
-                      <label>Thermwin Minimal Series</label>
-                      <label>Thermwin Aero Series</label>
+                      <label><a href={'/thermwin-rin'}> Thermwin Rin Series</a></label>
+                      <label><a href={'/thermwin-minimal'}> Thermwin Minimal Series</a></label>
+                      <label><a href={'/thermwin-aero'}> Thermwin Aero Series</a></label>
                     </div>
                   </div>
 
@@ -314,7 +314,7 @@ export default function Home() {
                 </p>
 
                 <div className={'section-btn-div'}>
-                  <a href={'#'} className={'btn btn-default'}><span>Learn about Us</span></a>
+                  <a href={'/about'} className={'btn btn-default'}><span>Learn about Us</span></a>
                 </div>
 
               </div>
@@ -374,7 +374,7 @@ export default function Home() {
             </div>
           </div>
           <div className={'section-btn-div text-center mt-3 wow animate__animated animate__fadeInUp'}>
-            <a href={'#'} className={'btn btn-default'}><span>View all projects</span></a>
+            <a href={'/project'} className={'btn btn-default'}><span>View all projects</span></a>
           </div>
         </div>
       </div>

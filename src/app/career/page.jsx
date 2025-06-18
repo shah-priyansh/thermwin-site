@@ -31,25 +31,83 @@ export default function Location() {
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header><span>01</span> Sales Executive</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    <div className={'row'}>
+                                        <div className={'col-md-4'}>
+                                            <div className={'form-group mb-3'}>
+                                                <label>Full Name*</label>
+                                                <input type={'text'} className={'form-control'}
+                                                       placeholder={'Type here'}/>
+                                            </div>
+                                        </div>
+                                        <div className={'col-md-4'}>
+                                            <div className={'form-group mb-3'}>
+                                                <label>Mobile*</label>
+                                                <input className={'form-control'} placeholder={'Type here'}/>
+                                            </div>
+                                        </div>
+                                        <div className={'col-md-4'}>
+                                            <div className={'form-group mb-3'}>
+                                                <label>Email address*</label>
+                                                <input type={'email'} className={'form-control'}
+                                                       placeholder={'Type here'}/>
+                                            </div>
+                                        </div>
+
+                                        <div className={'col-md-12'}>
+                                            <div className={'form-group mb-3'}>
+                                                <label>Message</label>
+                                                <textarea className={'form-control'} placeholder={'Type here'}
+                                                          rows={'4'}/>
+                                            </div>
+                                        </div>
+                                        <div className={'col-md-12'}>
+                                            <div className={'form-group mb-3'}>
+                                                <button className={'btn btn-default'}><span
+                                                    className={'py-3'}>Submit</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header><span>02</span> Sales Executive</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    <div className={'row'}>
+                                        <div className={'col-md-4'}>
+                                            <div className={'form-group mb-3'}>
+                                                <label>Full Name*</label>
+                                                <input type={'text'} className={'form-control'}
+                                                       placeholder={'Type here'}/>
+                                            </div>
+                                        </div>
+                                        <div className={'col-md-4'}>
+                                            <div className={'form-group mb-3'}>
+                                                <label>Mobile*</label>
+                                                <input className={'form-control'} placeholder={'Type here'}/>
+                                            </div>
+                                        </div>
+                                        <div className={'col-md-4'}>
+                                            <div className={'form-group mb-3'}>
+                                                <label>Email address*</label>
+                                                <input type={'email'} className={'form-control'}
+                                                       placeholder={'Type here'}/>
+                                            </div>
+                                        </div>
+
+                                        <div className={'col-md-12'}>
+                                            <div className={'form-group mb-3'}>
+                                                <label>Message</label>
+                                                <textarea className={'form-control'} placeholder={'Type here'}
+                                                          rows={'4'}/>
+                                            </div>
+                                        </div>
+                                        <div className={'col-md-12'}>
+                                            <div className={'form-group mb-3'}>
+                                                <button className={'btn btn-default'}><span
+                                                    className={'py-3'}>Submit</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
@@ -61,10 +119,14 @@ export default function Location() {
                                         <li> Type: Full-Time</li>
                                     </ul>
                                     <p>
-                                        As a Production Line Operator at ThermWin System Windows, you’ll play a key role in the precision manufacturing of our aluminium window systems. You will be responsible for operating machinery, maintaining quality standards, and ensuring smooth production flow in a fast-paced, automated environment.
+                                        As a Production Line Operator at ThermWin System Windows, you’ll play a key role
+                                        in the precision manufacturing of our aluminium window systems. You will be
+                                        responsible for operating machinery, maintaining quality standards, and ensuring
+                                        smooth production flow in a fast-paced, automated environment.
                                     </p>
                                     <p>
-                                        Send your resume to <a href={'mailto:careers@thermwinwindows.com'} >careers@thermwinwindows.com.</a>
+                                        Send your resume to <a
+                                        href={'mailto:careers@thermwinwindows.com'}>careers@thermwinwindows.com.</a>
                                     </p>
                                 </Accordion.Body>
                             </Accordion.Item>
