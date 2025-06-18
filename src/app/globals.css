@@ -100,7 +100,7 @@ a {
   padding-left: 300px;
   .logo {
     z-index: 1;
-    background-color: #fff;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     max-width: 300px;
@@ -111,8 +111,9 @@ a {
     top: 0;
     left: 0;
     width: 100%;
+    bottom: 0;
     img {
-      width: 220px;
+      width: 100%;
     }
   }
   .navbar {
@@ -174,6 +175,10 @@ a {
 
 
 .home-slider {
+  .banner-img {
+    height: 90vh;
+    overflow: hidden;
+  }
   .banner-content {
     align-items: center;
     padding: 50px;
@@ -1295,6 +1300,10 @@ a {
     }
   }
   .home-slider {
+    .banner-img {
+      height: auto;
+      overflow: hidden;
+    }
     .banner-content {
       padding: 20px;
       display: flex;

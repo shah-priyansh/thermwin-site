@@ -11,10 +11,11 @@ export default function Home() {
             <Carousel.Caption>
               <div className={'slider-div position-relative'}>
                 <div className={'banner-img'}>
-                  <img
+                  {/*<img
                       className={'img-fluid'}
                       src="/img/banner.png"
-                      alt="img" width={'100%'}/>
+                      alt="img" width={'100%'}/>*/}
+                  <video width="100%" src="/img/banner-video.mp4" playsInline loop muted autoPlay></video>
                 </div>
                 <div className={'banner-content wow animate__animated animate__fadeInLeft'}>
                   <h1>

@@ -15,7 +15,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 export default function Header() {
 
     return (
-        <header className={'main-header position-relative wow animate__animated animate__fadeIn'}>
+        <header className={'main-header bg-primary position-relative wow animate__animated animate__fadeIn'}>
             <div className={'top-header py-3'}>
                 <div className={'container'}>
                     <div className={'row align-items-center'}>
@@ -59,7 +59,7 @@ export default function Header() {
                     alt="img" width={'100%'}/>
             </Navbar.Brand>
 
-            <Navbar className={'position-relative'} collapseOnSelect expand="lg">
+            <Navbar className={'position-relative bg-white'} collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
