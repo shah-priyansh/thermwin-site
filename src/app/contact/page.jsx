@@ -11,20 +11,40 @@ export default function Location() {
         message: ''
     });
 
+    const [errorMessage, setErrorMessage] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({
             ...prev,
             [name]: value
         }));
+        // Clear error message when user starts typing
+        if (errorMessage) {
+            setErrorMessage('');
+        }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        
+        // Clear previous messages
+        setErrorMessage('');
+        setSuccessMessage('');
+        
+        // Email validation regex
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
         // Validate required fields
         if (!formData.fullName || !formData.city || !formData.email || !formData.phone) {
-            alert('Please fill in all required fields');
+            setErrorMessage('Please fill in all required fields');
+            return;
+        }
+        
+        // Validate email format
+        if (!emailRegex.test(formData.email)) {
+            setErrorMessage('Please enter a valid email address');
             return;
         }
 
@@ -35,23 +55,20 @@ export default function Location() {
 *City/Location:* ${formData.city}
 *Email:* ${formData.email}
 *Phone:* ${formData.phone}
-*Message:* ${formData.message || 'No message provided'}
-
----
-Sent from Thermwin Website`;
+*Message:* ${formData.message || 'No message provided'}`;
 
         // Encode the message for URL
         const encodedMessage = encodeURIComponent(whatsappMessage);
-
+        
         // WhatsApp number from the contact details (you can change this to your preferred number)
-        const whatsappNumber = '917202976525';
-
+        const whatsappNumber = '918154804765';
+        
         // Create WhatsApp URL
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-
+        
         // Open WhatsApp in new tab
         window.open(whatsappUrl, '_blank');
-
+        
         // Clear form after submission
         setFormData({
             fullName: '',
@@ -60,9 +77,9 @@ Sent from Thermwin Website`;
             phone: '',
             message: ''
         });
-
+        
         // Show success message
-        alert('Form submitted! Opening WhatsApp...');
+        setSuccessMessage('Form submitted successfully');
     };
 
     return (
@@ -87,7 +104,7 @@ Sent from Thermwin Website`;
                         <div className={'cd-card-list'}>
                             <div className={'cd-card'}>
                                 <p className={'h5'}>Call Us</p>
-                                <p className={'h3'}>+91 815 480 4766</p>
+                                <p className={'h3'}>+91 815 480 4765</p>
                                 <small>[ Mon - Sat: 9:00 AM – 7:00 PM ]</small>
                                 <div className={'cd-icon'}>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
@@ -223,11 +240,25 @@ Sent from Thermwin Website`;
                             <div className={'col-md-12'}>
                                 <div className={'form-group mb-3'}>
                                     <button type="submit" className={'btn btn-default w-100'}>
-                                        <span className={'py-3'}>Submit & Send to WhatsApp</span>
+                                        <span className={'py-3'}>Submit</span>
                                     </button>
                                 </div>
                             </div>
                         </div>
+                        
+                        {/* Error Message */}
+                        {errorMessage && (
+                            <div className="alert alert-danger mt-3" role="alert">
+                                {errorMessage}
+                            </div>
+                        )}
+                        
+                        {/* Success Message */}
+                        {successMessage && (
+                            <div className="alert alert-success mt-3" role="alert">
+                                {successMessage}
+                            </div>
+                        )}
                     </form>
                 </div>
 

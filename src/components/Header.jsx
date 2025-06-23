@@ -5,13 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-// import {useEffect, useState} from "react";
-// import ApiService from "@/services/api.service";
-// import {Dropdown, Fade, Form, FormControl} from "react-bootstrap";
-// import {useRouter} from "next/navigation";
-// import {useAuth} from "@/context/AuthContext";
-// import Auth from "@/components/auth";
-
 export default function Header() {
 
     return (
@@ -22,14 +15,14 @@ export default function Header() {
                         <div className={'col-12 col-sm-6'}>
                             <div className={'h-mail'}>
                                 <a className={'d-inline-flex gap-2 text-white align-items-center'}
-                                    href={'tel:815 480 4766'}>
+                                    href={'tel:815 480 4765'}>
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M5.15312 0.768751C4.9125 0.187501 4.27812 -0.121874 3.67188 0.0437508L0.921875 0.793751C0.378125 0.943751 0 1.4375 0 2C0 9.73125 6.26875 16 14 16C14.5625 16 15.0563 15.6219 15.2063 15.0781L15.9563 12.3281C16.1219 11.7219 15.8125 11.0875 15.2312 10.8469L12.2312 9.59688C11.7219 9.38438 11.1313 9.53125 10.7844 9.95938L9.52188 11.5C7.32188 10.4594 5.54063 8.67813 4.5 6.47813L6.04063 5.21875C6.46875 4.86875 6.61562 4.28125 6.40312 3.77188L5.15312 0.771876V0.768751Z"
                                             fill="white" />
                                     </svg>
-                                    +91 815 480 4766
+                                    +91 815 480 4765
                                 </a>
                             </div>
                         </div>

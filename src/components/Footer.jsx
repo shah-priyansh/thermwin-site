@@ -49,9 +49,12 @@ export default function Footer() {
                         <div className={'col-md-3 mb-3'}>
                             <div className={'footer-box'}>
                                 <h4>contact</h4>
-                                <div className={'footer-link mb-4'}>
-                                    <h5>+91 815 480 4766</h5>
-                                    <p>thermwinsystems@gmail.com</p>
+                                <div className={'footer-link mb-4'}  style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                    <h5>+91 815 480 4765</h5>
+                                    <a style={{
+                                        textTransform: 'none',
+                                    }}
+                                        href={'mailto:thermwinsystems@gmail.com'}>thermwinsystems@gmail.com</a>
                                 </div>
                                 <div className={'header-social pt-5'}>
 
