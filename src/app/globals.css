@@ -527,7 +527,7 @@ a {
           font-weight: 400;
           font-size: 16px;
           line-height: 19px;
-          text-transform: capitalize;
+          /* text-transform: capitalize; */
         }
       }
 
@@ -1739,4 +1739,86 @@ a {
 
   }
 
+}
+
+/* Sliding Window Animation */
+.sliding-window-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.window-frame {
+  width: 300px;
+  height: 200px;
+  background: #2c3e50;
+  border: 8px solid #34495e;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.window-pane {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(45deg, #74b9ff, #0984e3);
+  border: 2px solid #ddd;
+  transition: transform 2s ease-in-out;
+}
+
+.left-pane {
+  left: 0;
+  width: 50%;
+  transform: translateX(0);
+  animation: slideLeft 4s infinite;
+}
+
+.right-pane {
+  right: 0;
+  width: 50%;
+  transform: translateX(0);
+  animation: slideRight 4s infinite;
+}
+
+.window-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 60px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+@keyframes slideLeft {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  75% { transform: translateX(-100%); }
+}
+
+@keyframes slideRight {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(100%); }
+  75% { transform: translateX(100%); }
+}
+
+/* Add some reflection effect */
+.window-pane::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+  pointer-events: none;
 }
